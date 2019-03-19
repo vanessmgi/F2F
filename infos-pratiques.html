@@ -3,11 +3,20 @@
 
 <head>
    <!-- Required meta tags -->
+
    <meta charset="utf-8">
    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
    <link rel="shortcut icon" type="image/ico" href="img/favicon.ico" />
+
    <!-- Bootstrap CSS -->
+
    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous">
+
+   <!-- CSS / Font Awesome -->
+
+   <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
       crossorigin="anonymous">
 
    <title>Festival Plein Air - 2019</title>
@@ -27,7 +36,7 @@
                <span class="navbar-toggler-icon"></span>
             </button>
 
-            <div class="col-sm-22 collapse navbar-collapse" id="navbarText">
+            <div class="col-sm-12 collapse navbar-collapse" id="navbarText">
                <ul class="navbar-nav mx-auto">
                   <li class="nav-item">
                      <a href="index.html" class="nav-link">Accueil</a>
@@ -54,7 +63,7 @@
          <div class="row">
             <div class="col-md-12 text-white p-5 mt-5">
                <h2 class="font-weight-bold text-uppercase my-5">Festival Plein Air 2019</h2>
-               <h3 class="font-weight-light text-uppercase mt-5">Au parc Monceau du 4 au 8 août !</h3>
+               <h3 class="font-weight-light text-uppercase mt-5">Au parc Monceau du 5 au 8 août !</h3>
                <a class="btn btn-outline-warning mt-5" href="reservation.html" role="button">Réservez gratuitement
                   votre
                   place !</a>
@@ -70,21 +79,52 @@
       <div class="row">
          <div class="col-sm-12 text-center mt-4">
             <h2>Plan d'accès & Infos Pratiques !</h2>
+            <hr>
          </div>
-         <div class="col-sm-12 col-md-6 mt-4">
+         <div class="col-sm-12 col-md-6 mt-5">
+            <h2>Carte</h2>
+            <br>
             <iframe class="border" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2623.873553141942!2d2.3067609509321443!3d48.87968700705992!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66fbe98f714c3%3A0xe62425fddeddc402!2sParc+Monceau!5e0!3m2!1sfr!2sfr!4v1552671874327"
-               width="400" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
+               width="350" height="450" frameborder="1" style="border:0" allowfullscreen></iframe>
          </div>
-         <div class="col-sm-12 col-md-6 mt-4">
-            <ul>
-               <li>Accès au parc</li>
-               <li>Sanitaires</li>
-               <li>Point Info</li>
-               <li>...</li>
-            </ul>
+
+         <div class="col-sm-12 col-md-6 mt-5">
+            <div class="card bg-light">
+               <div class="card-body">
+                  <h2>Contactez-nous !</h2>
+                  <p>N'hésitez pas à nous contacter si vous avez la moindre question</p>
+                  <hr>
+                  <form class="needs-validation">
+                     <div class="form-group">
+                        <label for="nom">Votre Nom et Prénom</label>
+                        <input class="form-control" required type="text" name="nom" placeholder="Marion Cotillard">
+                     </div>
+
+                     <div class="form-group">
+                        <label for="email">Votre e-mail</label>
+                        <input class="form-control" required type="email" name="mail" placeholder="marion.cotillard@mail.com">
+                     </div>
+
+                     <div class="form-group">
+                        <label for="sujet">Objet</label>
+                        <input class="form-control" required type="text" name="objet" placeholder="Objet">
+                     </div>
+
+                     <div class="form-group">
+                        <label for="message">Votre message</label>
+                        <textarea class="form-control" required name="message" rows="5" cols="40" placeholder="Votre message"></textarea>
+                     </div>
+                     <button type="submit" class="btn btn-outline-secondary">Envoyer</button>
+
+                  </form>
+
+               </div>
+
+            </div>
 
          </div>
       </div>
+
       <br>
       <div class="row">
          <div class="col-sm-12 p-4 ">
@@ -109,13 +149,22 @@
    <!-- Contact Form -->
 
 
-
    <!-- Footer -->
 
-   <footer class="bg-warning text-dark mt-4 p-2 text-center fixed font-italic font-weight-light">
+   <footer class="bg-warning text-dark mt-4 p-2 text-center font-italic font-weight-light">
       <div class="container">
-         2019 © Festival de Films Plein Air
-      </div>
+         <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 px-auto mt-sm-3">
+               <ul class="list-unstyled list-inline social text-center">
+                  <li class="list-inline-item pr-2"><a href="#"><i class="fab fa-facebook-square fa-lg"></i></a></li>
+                  <li class="list-inline-item pr-2"><a href="#"><i class="fab fa-twitter-square fa-lg"></i></a></li>
+                  <li class="list-inline-item pr-2"><a href="#"><i class="fab fa-instagram fa-lg"></i></a></li>
+                  <li class="list-inline-item pr-2"><a href="#"><i class="fab fa-pinterest-square fa-lg"></i></a></li>
+               </ul>
+            </div>
+            </hr>
+         </div>
+         <p>2019 © Festival de Films Plein Air</p>
    </footer>
 
 
