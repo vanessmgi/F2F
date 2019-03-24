@@ -3,14 +3,23 @@
    margin: 0;
 } */
 
-/* body {
+body {
    font-family: "Open Sans", sans-serif;
-   padding-top: 100px;
-} */
+}
 
 h1, h2, h3, h4, h5, h6 {
    font-family: "Roboto Slab", sans-serif;
 }
+
+.banniere {
+   background-image: url('/img/banniere.jpg')
+}
+
+.reservation {
+   background-image: url('/img/formulaire.jpg');
+   font-weight: 700;
+}
+
 
 .fa-facebook-square, .fa-twitter-square, .fa-instagram, .fa-pinterest-square {
    color: black;
@@ -23,6 +32,7 @@ h1, h2, h3, h4, h5, h6 {
    color: rgb(255, 93, 0);
 }
 
+
 .nav-link {
    letter-spacing: 3px;
 }
@@ -31,9 +41,7 @@ h1, h2, h3, h4, h5, h6 {
    background-color: #ffc10765;
 }
 
-
-.reservation {
-   background-image: url('/img/formulaire.jpg');
-   font-weight: 700;
- 
+.menu {
+   background-color: #ffc107;
 }
+
