@@ -3,7 +3,14 @@
    margin: 0;
 } */
 
+/* body {
+   font-family: "Open Sans", sans-serif;
+   padding-top: 100px;
+} */
 
+h1, h2, h3, h4, h5, h6 {
+   font-family: "Roboto Slab", sans-serif;
+}
 
 .fa-facebook-square, .fa-twitter-square, .fa-instagram, .fa-pinterest-square {
    color: black;
@@ -21,8 +28,12 @@
 }
 
 .alert-custom{
-   background-color: #ffc107a1;
+   background-color: #ffc10765;
 }
 
 
-
+.reservation {
+   background-image: url('/img/formulaire.jpg');
+   font-weight: 700;
+ 
+}

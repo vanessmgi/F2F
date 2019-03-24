@@ -19,6 +19,9 @@
    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
       integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 
+   <!-- Font -->
+   <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto+Slab" rel="stylesheet">
+
    <title>Festival Plein Air - 2019</title>
 </head>
 
@@ -27,7 +30,7 @@
    <!-- Logo / Social Networks / Menu -->
 
    <header>
-      <nav class="navbar navbar-light bg-warning navbar-expand-md sticky-top text-center">
+      <nav class="navbar navbar-light bg-warning navbar-expand-md text-center">
          <div class="container">
             <a class="navbar-brand" href="#">
                <img src="img/logo.png" width="90" height="90" alt="Logo">
@@ -45,7 +48,7 @@
                      <a href="films.html" class="nav-link">Les Films</a>
                   </li>
                   <li class="nav-item">
-                     <a href="reservation.html" class="nav-link">Réservation</a>
+                     <a href="index.html#reservation" class="nav-link">Réservation</a>
                   </li>
                   <li class="nav-item active">
                      <a href="infos-pratiques.html" class="nav-link">Infos Pratiques</a>
@@ -74,40 +77,45 @@
       </div>
    </section>
 
+
    <!-- Maps & Informations -->
-
-   <div class="container">
-      <div class="row">
-         <div class="col-sm-12 text-center mt-4">
-            <h2>Plan d'accès & Infos Pratiques !</h2>
-            <hr>
-         </div>
-         <div class="col-sm-12 mt-5 text-center">
-            <h2>Carte</h2>
-            <br>
-            <iframe class="border"
-               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2623.873553141942!2d2.3067609509321443!3d48.87968700705992!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66fbe98f714c3%3A0xe62425fddeddc402!2sParc+Monceau!5e0!3m2!1sfr!2sfr!4v1552671874327"
-               width="650" height="450" frameborder="1" style="border:0" allowfullscreen></iframe>
-         </div>
-
-         <div class="col-sm-12 mt-5">
-            <h2>Comment accéder au Festival ?</h2>
-            <br>
-            <p><i class="fas fa-shoe-prints"></i> : 35 Boulevard de Courcelles 75008 Paris</p>
-            <p><i class="fas fa-car"></i> : 35 Boulevard de Courcelles 75008 Paris</p>
-            <p><i class="fas fa-bus"></i> : ligne 30 - Arrêt Monceau</p>
-            <p><i class="fas fa-subway"></i> : Métro ligne 2 - Arrêt Monceau // Métro ligne 3 - Arrêt Malesherbes </p>
-         </div>
-
-
-      </div>
-
-      <div class="col-md-12 mt-5">
-         <div class="card bg-light">
-            <div class="card-body">
-               <h2>Contactez-nous !</h2>
+   <section class="alert-custom pt-5">
+      <div class="container">
+         <div class="row">
+            <div class="col-sm-12 text-center mt-2">
+               <h3>Plan d'accès & Infos Pratiques !</h3>
                <hr>
-               <p>N'hésitez pas à nous contacter si vous avez la moindre question</p>
+            </div>
+            <div class="col-sm-12 mt-5 text-center">
+               <h2>Le parc Monceau</h2>
+               <br>
+               <iframe class="border"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2623.873553141942!2d2.3067609509321443!3d48.87968700705992!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66fbe98f714c3%3A0xe62425fddeddc402!2sParc+Monceau!5e0!3m2!1sfr!2sfr!4v1552671874327"
+                  width="650" height="450" frameborder="1" style="border:0" allowfullscreen></iframe>
+            </div>
+
+            <div class="col-md-8 offset-md-2 mt-5 pb-5 text-center">
+               <h2>Comment accéder au Festival ?</h2>
+               <br>
+               <p><i class="fas fa-shoe-prints"></i> : 35 Boulevard de Courcelles 75008 Paris</p>
+               <p><i class="fas fa-car"></i> : 35 Boulevard de Courcelles 75008 Paris</p>
+               <p><i class="fas fa-bus"></i> : ligne 30 - Arrêt Monceau</p>
+               <p><i class="fas fa-subway"></i> : Métro ligne 2 - Arrêt Monceau // Métro ligne 3 - Arrêt Malesherbes
+               </p>
+            </div>
+         </div>
+      </div>
+   </section>
+
+
+   <!-- Contact Form -->
+
+   <section class="reservation bg-light">
+      <div class="container">
+         <div class="row">
+            <div class="col-md-8 offset-md-2 my-4">
+
+               <h2>Une question ? Contactez-nous !</h2>
                <hr>
                <form class="needs-validation">
                   <div class="form-group">
@@ -122,11 +130,6 @@
                   </div>
 
                   <div class="form-group">
-                     <label for="sujet">Objet</label>
-                     <input class="form-control" required type="text" name="objet" placeholder="Objet">
-                  </div>
-
-                  <div class="form-group">
                      <label for="message">Votre message</label>
                      <textarea class="form-control" required name="message" rows="5" cols="40"
                         placeholder="Votre message"></textarea>
@@ -134,24 +137,18 @@
                   <button type="submit" class="btn btn-outline-secondary">Envoyer</button>
 
                </form>
-
             </div>
-
          </div>
-
       </div>
-   </div>
+   </section>
 
 
-   </div>
 
-
-   <!-- Contact Form -->
 
 
    <!-- Footer -->
 
-   <footer class="bg-warning text-dark mt-4 p-2 text-center font-italic font-weight-light">
+   <footer class="bg-warning text-dark p-2 text-center font-italic font-weight-light">
       <div class="container">
          <div class="row">
             <div class="col-xs-12 col-sm-12 col-md-12 px-auto mt-sm-3">
