@@ -10,24 +10,24 @@
 
    <!-- Bootstrap CSS -->
 
-   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous">
 
    <!-- CSS / Font Awesome -->
 
    <link rel="stylesheet" href="css/style.css">
-   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
-      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous">
 
    <title>Festival Plein Air - 2019</title>
 </head>
 
 <body>
 
-   <!-- Logo / Social Networks / Navbar -->
+   <!-- Logo / Social Networks / Menu -->
 
    <header>
-      <nav class="navbar navbar-light bg-warning navbar-expand-md text-center">
+      <nav class="navbar navbar-light bg-warning navbar-expand-md sticky-top text-center">
          <div class="container">
             <a class="navbar-brand" href="#">
                <img src="img/logo.png" width="90" height="90" alt="Logo">
@@ -35,27 +35,25 @@
             <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarText">
                <span class="navbar-toggler-icon"></span>
             </button>
-
             <div class="col-sm-12 collapse navbar-collapse" id="navbarText">
                <ul class="navbar-nav mx-auto">
-                  <li class="nav-item active">
+                  <li class="nav-item">
                      <a href="index.html" class="nav-link">Accueil</a>
                   </li>
-                  <li class="nav-item">
-                     <a href="#accordionExample" class="nav-link">Les Films</a>
+                  <li class="nav-item active">
+                     <a href="films.html" class="nav-link">Les Films</a>
                   </li>
                   <li class="nav-item">
-                     <a href="#reservation" class="nav-link">Réservation</a>
+                     <a href="reservation.html" class="nav-link">Réservation</a>
                   </li>
                   <li class="nav-item">
                      <a href="infos-pratiques.html" class="nav-link">Infos Pratiques</a>
                   </li>
                </ul>
             </div>
-
+         </div>
       </nav>
    </header>
-
 
    <!-- Banner -->
 
@@ -66,201 +64,107 @@
             <div class="col-md-12 text-white p-5 mt-5">
                <h2 class="font-weight-bold text-uppercase my-5">Festival Plein Air 2019</h2>
                <h3 class="font-weight-light text-uppercase mt-5">Au parc Monceau du 5 au 8 août !</h3>
-               <a class="btn btn-outline-warning text-white mt-5 btn-lg" href="#reservation" role="button">Réservez gratuitement
-                  votre place !</a>
+               <a class="btn btn-outline-warning mt-5" href="reservation.html" role="button">Réservez gratuitement
+                  votre
+                  place !</a>
             </div>
          </div>
       </div>
       </div>
    </section>
 
-   <!-- Jumbotron -->
+
+   <!-- Schedule -->
 
 
-   <div class="alert alert-custom text-center pt-5 pb-5" role="alert">
-      <h3 class="font-weight-light mt-2">Festival Plein Air 2019</h3>
-      <hr>
-      <p class="col-md-8 offset-md-2">L'association "Les Films de Plein Air" vient d'obtenir l'autorisation de
-         projeter au parc Monceau, du 5 au 8
-         août chaque soir, de 18 h à minuit, venez découvrir les films d'auteur. 
-         L'accès aux projections est totalement
-         gratuit et ouvert à tous, cependant veuillez vous prè-inscrire pour estimer le nombre de personnes présentes
-         chaque soir, afin d'apporter des améliorations chaque année.
-      </p>
 
-   </div>
 
    <!-- Cards -->
-   <div class="container">
-      <div class="accordion text-center mt-4" id="accordionExample">
-         <div class="card">
-            <div class="card-header" id="headingOne">
-               <h2 class="mb-0">
-                  <button class="btn collapsed" type="button" data-toggle="collapse" data-target="#collapseOne"
-                     aria-expanded="true" aria-controls="collapseOne">
-                     Programme du jeudi 5 août
-                  </button>
-               </h2>
-            </div>
 
-            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
-               <div class="card-body">
-                  <div class="row">
-                     <div class="col-sm-12 col-md-4">
-                        <img src="img/films/films-icones/persepolis.jpg" class="img-thumbnail" alt="">
-                        <!-- Button modal -->
-                        <button type="button" class="btn btn-outline-warning btn-block text-dark text-center btn-small"
-                           data-toggle="modal" data-target="#persepolis">
-                           Détails
-                        </button>
-
-                     </div>
-                     <div class="col-sm-12 col-md-4">
-                        <img src="img/films/films-icones/de-rouille.jpg" class="img-thumbnail" alt="">
-                        <!-- Button modal -->
-                        <button type="button" class="btn btn-outline-warning btn-block text-dark text-center btn-small"
-                           data-toggle="modal" data-target="#rouille">
-                           Détails
-                        </button>
-
-                     </div>
-                     <div class="col-sm-12 col-md-4">
-                        <img src="img/films/films-icones/patients.jpg" class="img-thumbnail" alt="">
-                        <!-- Button modal -->
-                        <button type="button" class="btn btn-outline-warning btn-block text-dark text-center"
-                           data-toggle="modal" data-target="#patients">
-                           Détails
-                        </button>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-         <div class="card">
-            <div class="card-header" id="headingTwo">
-               <h2 class="mb-0">
-                  <button class="btn collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo"
-                     aria-expanded="false" aria-controls="collapseTwo">
-                     Programme du vendredi 6 août
-                  </button>
-               </h2>
-            </div>
-            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-               <div class="card-body">
-                  <div class="row">
-                     <div class="col-sm-12 col-md-4">
-                        <img src="img/films/films-icones/jevaisbien.jpg" class="img-thumbnail" alt="">
-                        <!-- Button modal -->
-                        <button type="button" class="btn btn-outline-warning btn-block text-dark text-center"
-                           data-toggle="modal" data-target="#jeVaisBien">
-                           Détails
-                        </button>
-                     </div>
-                     <div class="col-sm-12 col-md-4">
-                        <img src="img/films/films-icones/ecume.jpg" class="img-thumbnail" alt="">
-                        <!-- Button modal -->
-                        <button type="button" class="btn btn-outline-warning btn-block text-dark text-center"
-                           data-toggle="modal" data-target="#ecume">
-                           Détails
-                        </button>
-                     </div>
-                     <div class="col-sm-12 col-md-4">
-                        <img src="img/films/films-icones/la-haine.jpg" class="img-thumbnail" alt="">
-                        <!-- Button modal -->
-                        <button type="button" class="btn btn-outline-warning btn-block text-dark text-center"
-                           data-toggle="modal" data-target="#laHaine">
-                           Détails
-                        </button>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-         <div class="card">
-            <div class="card-header" id="headingThree">
-               <h2 class="mb-0">
-                  <button class="btn collapsed" type="button" data-toggle="collapse"
-                     data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                     Programme du samedi 7 août
-                  </button>
-               </h2>
-            </div>
-            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-               <div class="card-body">
-                  <div class="row">
-                     <div class="col-sm-12 col-md-4">
-                        <img src="img/films/films-icones/polisse.jpg" class="img-thumbnail" alt="">
-                        <!-- Button modal -->
-                        <button type="button" class="btn btn-outline-warning btn-block text-dark text-center"
-                           data-toggle="modal" data-target="#polisse">
-                           Détails
-                        </button>
-                     </div>
-                     <div class="col-sm-12 col-md-4">
-                        <img src="img/films/films-icones/vie-adele.jpg" class="img-thumbnail" alt="">
-                        <!-- Button modal -->
-                        <button type="button" class="btn btn-outline-warning btn-block text-dark text-center"
-                           data-toggle="modal" data-target="#vieAdele">
-                           Détails
-                        </button>
-                     </div>
-                     <div class="col-sm-12 col-md-4">
-                        <img src="img/films/films-icones/120minutes.jpg" class="img-thumbnail" alt="">
-                        <!-- Button modal -->
-                        <button type="button" class="btn btn-outline-warning btn-block text-dark text-center"
-                           data-toggle="modal" data-target="#battements">
-                           Détails
-                        </button>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-         <div class="card">
-            <div class="card-header" id="headingFour">
-               <h2 class="mb-0">
-                  <button class="btn collapsed" type="button" data-toggle="collapse"
-                     data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                     Programme du dimanche 8 août
-                  </button>
-               </h2>
-            </div>
-            <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
-               <div class="card-body">
-                  <div class="row">
-                     <div class="col-sm-12 col-md-4">
-                        <img src="img/films/films-icones/hippocrate.jpg" class="img-thumbnail" alt="">
-                        <!-- Button modal -->
-                        <button type="button" class="btn btn-outline-warning btn-block text-dark text-center"
-                           data-toggle="modal" data-target="#hippocrate">
-                           Détails
-                        </button>
-                     </div>
-                     <div class="col-sm-12 col-md-4">
-                        <img src="img/films/films-icones/huits-femmes.jpg" class="img-thumbnail" alt="">
-                        <!-- Button modal -->
-                        <button type="button" class="btn btn-outline-warning btn-block text-dark text-center"
-                           data-toggle="modal" data-target="#femmes">
-                           Détails
-                        </button>
-                     </div>
-                     <div class="col-sm-12 col-md-4">
-                        <img src="img/films/films-icones/tomboy.jpg" class="img-thumbnail" alt="">
-                        <!-- Button modal -->
-                        <button type="button" class="btn btn-outline-warning btn-block text-dark text-center"
-                           data-toggle="modal" data-target="#tomboy">
-                           Détails
-                        </button>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </div>
+   <div class="alert alert-warning text-center" role="alert">
+      <h3 class="font-weight-light">Jeudi 5 Août <i class="fas fa-video fa-sm pl-2"></i></h3>
    </div>
-   <br>
-   <hr>
-   <br>
+
+   <div class="container">
+     
+
+         <div class="card mb-3" style="max-width: 540px;">
+            <div class="row no-gutters">
+               <div class="col-sm-4 col-md-4 col-lg-4">
+                  <img src="img/films/films-icones/persepolis.jpg" class="card-img" alt="...">
+               </div>
+               <div class="col-sm-8 col-md-8 col-lg-8">
+                  <div class="card-body">
+                     <h5 class="card-title">Persepolis</h5>
+                     <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                        additional content. This content is a little bit longer.</p>
+                     <p class="card-text"><small class="text-muted">VF - Drama - 12 ans</small></p>
+
+                     <!-- Button modal -->
+                     <button type="button" class="btn btn-outline-warning btn-block text-dark text-center btn-small"
+                        data-toggle="modal" data-target="#persepolis">
+                        Détails
+                     </button>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="card mb-3" style="max-width: 540px;">
+            <div class="row no-gutters">
+               <div class="col-md-4 col-lg-4">
+                  <img src="img/films/de-rouille.jpg" class="card-img" alt="...">
+               </div>
+               <div class="col-md-8 col-lg-8">
+                  <div class="card-body">
+                     <h5 class="card-title">Card title</h5>
+                     <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                        additional content. This content is a little bit longer.</p>
+                     <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="card mb-3" style="max-width: 540px;">
+            <div class="row no-gutters">
+               <div class="col-md-4">
+                  <img src="img/films/patients.jpg" class="card-img" alt="...">
+               </div>
+               <div class="col-md-8">
+                  <div class="card-body">
+                     <h5 class="card-title">Card title</h5>
+                     <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                        additional content. This content is a little bit longer.</p>
+                     <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+
+
+      
+   </div>
+
+  
+
+   <div class="alert alert-warning mt-5 text-center" role="alert">
+      <h3 class="font-weight-light">Vendredi 6 Août <i class="fas fa-video fa-sm pl-2"></i></h3>
+   </div>
+
+   
+
+   <div class="alert alert-warning mt-5 text-center" role="alert">
+      <h3 class="font-weight-light">Samedi 7 Août <i class="fas fa-video fa-sm pl-2"></i></h3>
+   </div>
+
+  
+
+   <div class="alert alert-warning mt-5 text-center" role="alert">
+      <h3 class="font-weight-light">Dimanche 8 Août <i class="fas fa-video fa-sm pl-2"></i></h3>
+   </div>
+
+   
+
 
    <!-- Modal -->
 
@@ -274,12 +178,6 @@
                   <span aria-hidden="true">&times;</span>
                </button>
             </div>
-            <div class="embed-responsive embed-responsive-16by9">
-               <iframe class="embed-responsive-item"
-                  src="https://www.youtube.com/embed/VNUGHxZviag?rel=0&amp;autoplay=0" frameborder="0"
-                  allowfullscreen></iframe>
-            </div>
-            <hr>
             <div class="modal-body text-center">
                Téhéran 1978 : Marjane, huit ans, songe à l'avenir et se rêve en prophète sauvant le monde. Choyée
                par des parents
@@ -317,11 +215,6 @@
                   <span aria-hidden="true">&times;</span>
                </button>
             </div>
-            <!-- <div class="embed-responsive embed-responsive-16by9">
-                 <iframe class="embed-responsive-item"
-                    src="https://www.youtube.com/embed/z2cgCzKR2mE?rel=0&amp;autoplay=1" frameborder="0"
-                    allowfullscreen></iframe>
-              </div> -->
             <div class="modal-body text-center">
                Ça commence dans le Nord.
                Ali se retrouve avec Sam, 5 ans, sur les bras. C’est son fils, il le connaît à peine. Sans domicile,
@@ -359,11 +252,6 @@
                   <span aria-hidden="true">&times;</span>
                </button>
             </div>
-            <!-- <div class="embed-responsive embed-responsive-16by9">
-               <iframe class="embed-responsive-item"
-                  src="https://www.youtube.com/embed/A02Xmwng9OA?rel=0&amp;autoplay=1" frameborder="0"
-                  allowfullscreen></iframe>
-            </div> -->
             <div class="modal-body text-center">
                Se laver, s'habiller, marcher, jouer au basket, voici ce que Ben ne peut plus faire à son arrivée dans
                un centre de
@@ -394,11 +282,6 @@
                   <span aria-hidden="true">&times;</span>
                </button>
             </div>
-            <!-- <div class="embed-responsive embed-responsive-16by9">
-               <iframe class="embed-responsive-item"
-                  src="https://www.youtube.com/embed/HWCIu0Ll91s?rel=0&amp;autoplay=1" frameborder="0"
-                  allowfullscreen></iframe>
-            </div> -->
             <div class="modal-body text-center">
                Comme elle rentre de vacances, Lili, 19 ans, apprend par ses parents que Loïc, son frère jumeau, suite à
                une violente
@@ -426,11 +309,6 @@
                   <span aria-hidden="true">&times;</span>
                </button>
             </div>
-            <!-- <div class="embed-responsive embed-responsive-16by9">
-                <iframe class="embed-responsive-item"
-                   src="https://www.youtube.com/embed/kI90CvU0P_c?rel=0&amp;autoplay=1" frameborder="0"
-                   allowfullscreen></iframe>
-             </div> -->
             <div class="modal-body text-center">
                L’histoire surréelle et poétique d’un jeune homme idéaliste et inventif, Colin, qui rencontre Chloé, une
                jeune femme
@@ -461,11 +339,6 @@
                   <span aria-hidden="true">&times;</span>
                </button>
             </div>
-            <!-- <div class="embed-responsive embed-responsive-16by9">
-               <iframe class="embed-responsive-item"
-                  src="https://www.youtube.com/embed/G65Y-yr4M4o?rel=0&amp;autoplay=1" frameborder="0"
-                  allowfullscreen></iframe>
-            </div> -->
             <div class="modal-body text-center">
                Trois copains d'une banlieue ordinaire traînent leur ennui et leur jeunesse qui se perd. Ils vont vivre
                la journée la
@@ -491,11 +364,6 @@
                   <span aria-hidden="true">&times;</span>
                </button>
             </div>
-            <!-- <div class="embed-responsive embed-responsive-16by9">
-               <iframe class="embed-responsive-item"
-                  src="https://www.youtube.com/embed/mfrxqJpJeIA?rel=0&amp;autoplay=1" frameborder="0"
-                  allowfullscreen></iframe>
-            </div> -->
             <div class="modal-body text-center">
                Le quotidien des policiers de la BPM (Brigade de Protection des Mineurs) ce sont les gardes à vue de
                pédophiles, les
@@ -531,11 +399,6 @@
                   <span aria-hidden="true">&times;</span>
                </button>
             </div>
-            <!-- <div class="embed-responsive embed-responsive-16by9">
-               <iframe class="embed-responsive-item"
-                  src="https://www.youtube.com/embed/I46FzNqIY0c?rel=0&amp;autoplay=1" frameborder="0"
-                  allowfullscreen></iframe>
-            </div> -->
             <div class="modal-body text-center">
                À 15 ans, Adèle ne se pose pas de question : une fille, ça sort avec des garçons. Sa vie bascule le jour
                où elle
@@ -561,11 +424,6 @@
                   <span aria-hidden="true">&times;</span>
                </button>
             </div>
-            <!-- <div class="embed-responsive embed-responsive-16by9">
-               <iframe class="embed-responsive-item"
-                  src="https://www.youtube.com/embed/_TEzcCV8c8E?rel=0&amp;autoplay=1" frameborder="0"
-                  allowfullscreen></iframe>
-            </div> -->
             <div class="modal-body text-center">
                Début des années 90. Alors que le sida tue depuis près de dix ans, les militants d'Act Up-Paris
                multiplient les actions
@@ -590,11 +448,6 @@
                   <span aria-hidden="true">&times;</span>
                </button>
             </div>
-            <!-- <div class="embed-responsive embed-responsive-16by9">
-               <iframe class="embed-responsive-item"
-                  src="https://www.youtube.com/embed/gZGY1Ncxv6M?rel=0&amp;autoplay=1" frameborder="0"
-                  allowfullscreen></iframe>
-            </div> -->
             <div class="modal-body text-center">
                Benjamin va devenir un grand médecin, il en est certain. Mais pour son premier stage d’interne dans le
                service de son
@@ -624,11 +477,6 @@
                   <span aria-hidden="true">&times;</span>
                </button>
             </div>
-            <!-- <div class="embed-responsive embed-responsive-16by9">
-               <iframe class="embed-responsive-item"
-                  src="https://www.youtube.com/embed/jGyJL8SnsOM?rel=0&amp;autoplay=1" frameborder="0"
-                  allowfullscreen></iframe>
-            </div> -->
             <div class="modal-body text-center">
                Dans les années cinquante, dans une grande demeure bourgeoise en pleine campagne, les gens sont sur le
                point de fêter
@@ -655,11 +503,6 @@
                   <span aria-hidden="true">&times;</span>
                </button>
             </div>
-            <!-- <div class="embed-responsive embed-responsive-16by9">
-               <iframe class="embed-responsive-item"
-                  src="https://www.youtube.com/embed/Jb-Oys-IcWE?rel=0&amp;autoplay=1" frameborder="0"
-                  allowfullscreen></iframe>
-            </div> -->
             <div class="modal-body text-center">
                Laure a 10 ans. Laure est un garçon manqué. Arrivée dans un nouveau quartier, elle fait croire à Lisa et
                sa bande
@@ -677,99 +520,6 @@
          </div>
       </div>
    </div>
-
-   <!-- Contact Form -->
-   <section class="reservation">
-      <div class="container">
-         <div class="card bg-light">
-            <div class="card-body" id="reservation">
-               <h2 class="text-center pb-2">Réserver en ligne !</h2>
-               <p class="text-center">Vous recevrez un e-mail de confirmation dès la validation du formulaire.</p>
-               <p class="text-center">Si vous souhaitez annuler votre réservation, vous trouverez les informations
-                  nécessaires dans l'e-mail de confirmation</p>
-               <hr>
-               <form class="needs-validation">
-                  <div class="col-md-6 pl-1 form-group">
-                     <label for="nom">Prénom et Nom</label>
-                     <input class="form-control" required type="text" name="nom" placeholder="Marion Cotillard">
-                  </div>
-                  <div class="row">
-                     <div class="col-md-5 pl-3 form-group">
-                        <label for="email">Votre e-mail</label>
-                        <input class="form-control" required type="email" name="mail"
-                           placeholder="marion.cotillard@mail.com">
-                     </div>
-                     <div class="col-md-5 pl-3 form-group">
-                        <label for="telephone">Votre numéro de téléphone</label>
-                        <input class="form-control" required type="text" name="nom" placeholder="06.XX.XX.XX">
-                     </div>
-                  </div>
-                  <div class="row">
-                     <div class="col-md-4 form-group">
-                        <label for="date">Choix de la date</label>
-                        <select class="form-control" id="date">
-                           <option>Jeudi 5 août</option>
-                           <option>Vendredi 6 août</option>
-                           <option>Samedi 7 août</option>
-                           <option>Dimanche 8 août</option>
-                        </select>
-                     </div>
-                     <div class="col-md-4 form-group">
-                        <label for="film">Choix du film</label>
-                        <select class="form-control" id="film">
-                           <option>Persepolis</option>
-                           <option>De rouille et d'os</option>
-                           <option>Patients</option>
-                           <option>Je vais bien ne t'en fais pas</option>
-                           <option>L'écume des jours</option>
-                           <option>La Haine</option>
-                           <option>Polisse</option>
-                           <option>La vie d'Adèle</option>
-                           <option>120 battements par minute</option>
-                           <option>Hippocrate</option>
-                           <option>8 femmes</option>
-                           <option>Tomboy</option>
-                        </select>
-                     </div>
-                     <div class="col-md-4 form-group">
-                        <label for="heure">Choix de l'heure</label>
-                        <select class="form-control" id="heure">
-                           <option>18h</option>
-                           <option>20h</option>
-                           <option>22h30</option>
-                        </select>
-                     </div>
-                  </div>
-                  <div class="form-group">
-                     <label for="message">Si vous avez besoin d'un accompagnement particulier</label>
-                     <textarea class="form-control" required name="message" rows="3" cols="20"
-                        placeholder="ex : J'ai des difficultés à marcher / J'ai des problèmes de vue / Etc."></textarea>
-                  </div>
-                  <div class="form-check form-check-inline">
-                     <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
-                        value="option1">
-                     <label class="form-check-label" for="inlineRadio1">Etudiant</label>
-                  </div>
-                  <div class="form-check form-check-inline">
-                     <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
-                        value="option2">
-                     <label class="form-check-label" for="inlineRadio2">Particulier</label>
-                  </div>
-                  <div class="form-check form-check-inline">
-                     <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3"
-                        value="option3">
-                     <label class="form-check-label" for="inlineRadio3">Professionnel</label>
-                  </div>
-                  <br>
-                  <button type="submit" class="btn btn-outline-secondary mt-3">Réserver !</button>
-
-               </form>
-
-            </div>
-
-         </div>
-      </div>
-   </section>
 
    <!-- Footer -->
 
@@ -791,24 +541,14 @@
 
 
 
-
-
-
-
-
-
-
    <!-- Optional JavaScript -->
    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
-   </script>
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
-   </script>
-   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
-   </script>
+   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"></script>
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"></script>
 </body>
 
 </html>

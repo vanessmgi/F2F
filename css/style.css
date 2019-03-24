@@ -4,6 +4,7 @@
 } */
 
 
+
 .fa-facebook-square, .fa-twitter-square, .fa-instagram, .fa-pinterest-square {
    color: black;
    size: 5px;
@@ -12,9 +13,16 @@
 .fa-twitter-square:hover,
 .fa-instagram:hover,
 .fa-pinterest-square:hover {
-   color: rgb(255, 94, 0);
+   color: rgb(255, 93, 0);
 }
 
 .nav-link {
    letter-spacing: 3px;
 }
+
+.alert-custom{
+   background-color: #ffc107a1;
+}
+
+
+
