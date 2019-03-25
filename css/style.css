@@ -7,7 +7,12 @@ body {
    font-family: "Open Sans", sans-serif;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
    font-family: "Roboto Slab", sans-serif;
 }
 
@@ -16,15 +21,29 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .reservation {
-   background-image: url('/img/formulaire.jpg');
+   background-image:
+      linear-gradient(rgba(146, 146, 146, 0.041),
+      rgba(255, 255, 0, 0.164)), url('/img/popcorn.jpg');
    font-weight: 700;
+
 }
 
 
-.fa-facebook-square, .fa-twitter-square, .fa-instagram, .fa-pinterest-square {
+.form-control {
+   background-color: rgba(128, 128, 128, 0.2);
+   border: 1px solid black;
+   color: rgba(0, 0, 0, 0.678);
+}
+
+
+.fa-facebook-square,
+.fa-twitter-square,
+.fa-instagram,
+.fa-pinterest-square {
    color: black;
    size: 5px;
 }
+
 .fa-facebook-square:hover,
 .fa-twitter-square:hover,
 .fa-instagram:hover,
@@ -37,7 +56,7 @@ h1, h2, h3, h4, h5, h6 {
    letter-spacing: 3px;
 }
 
-.alert-custom{
+.alert-custom {
    background-color: #ffc10765;
 }
 
@@ -45,3 +64,16 @@ h1, h2, h3, h4, h5, h6 {
    background-color: #ffc107;
 }
 
+.bg-warning, .dropdown-menu {
+   background-image: 
+   linear-gradient(rgba(17, 0, 255, 0.075), rgba(151, 38, 38, 0.589));
+}
+
+.navbar-brand {
+padding: 0;
+margin: 0;
+}
+
+.footer {
+   line-height: 10px;
+}
