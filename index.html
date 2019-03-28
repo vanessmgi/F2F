@@ -34,14 +34,14 @@
    <header>
       <nav class="navbar navbar-light bg-warning navbar-expand-lg text-center font-weight-bolder">
          <div class="container">
-            <a class="navbar-brand" href="#">
+            <!-- <a class="navbar-brand" href="#">
                <img src="img/logo.png" width="80" height="80" alt="Logo">
-            </a>
-            <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarText">
+            </a> -->
+            <button class="navbar-toggler center" data-toggle="collapse" data-target="#navbarText">
                <span class="navbar-toggler-icon"></span>
             </button>
 
-            <div class="col-sm-12 collapse navbar-collapse" id="navbarText">
+            <div class="col-sm-12 col-md-12 collapse navbar-collapse" id="navbarText">
                <ul class="navbar-nav mx-auto pt-3">
                   <li class="nav-item active">
                      <a href="index.html" class="nav-link">Accueil</a>
@@ -50,10 +50,10 @@
                      <a href="#films" class="nav-link">Les Films</a>
                   </li>
                   <li class="nav-item">
-                     <a href="#reservation" class="nav-link">Réservation</a>
+                     <a href="infos-pratiques.html" class="nav-link">Infos Pratiques</a>
                   </li>
                   <li class="nav-item">
-                     <a href="infos-pratiques.html" class="nav-link">Infos Pratiques</a>
+                     <a href="actualites.html" class="nav-link">Blog</a>
                   </li>
                   <li class="nav-item">
                      <p class="nav-link">l</p>
@@ -63,7 +63,7 @@
                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Français
                      </a>
-                     <div class="dropdown-menu menu" aria-labelledby="navbarDropdown">
+                     <div class="dropdown-menu menu text-center" aria-labelledby="navbarDropdown">
                         <a class="dropdown-item" href="#">Anglais</a>
                         <a class="dropdown-item" href="#">Espagnol</a>
                      </div>
@@ -97,8 +97,8 @@
    <!-- Jumbotron -->
 
 
-   <div class="alert alert-custom text-center pt-5 pb-5" role="alert">
-      <h3 class="font-weight-light mt-2">Festival Plein Air 2019</h3>
+   <div class="alert alert-custom text-center pt-2 pb-5" role="alert">
+      <img src="img/logo.png" width="200" height="200" alt="Logo">
       <hr>
       <br>
       <p class="col-md-8 offset-md-2">L'association "Les Films de Plein Air" vient d'obtenir l'autorisation de
@@ -116,8 +116,10 @@
 
 
    <div class="container">
-      <div class="accordion text-center mt-4" id="films">
+      <div class="accordion text-center mt-4 mb-5" id="films">
+
          <div class="card">
+
             <div class="card-header" id="headingOne">
                <h2 class="mb-0">
                   <button class="btn collapsed" type="button" data-toggle="collapse" data-target="#collapseOne"
@@ -158,12 +160,12 @@
                            data-toggle="modal" data-target="#patients">
                            Plus d'infos
                         </button>
-
                      </div>
                   </div>
                </div>
             </div>
          </div>
+
 
          <div class="card">
             <div class="card-header" id="headingTwo">
@@ -211,6 +213,7 @@
                </div>
             </div>
          </div>
+
 
          <div class="card">
             <div class="card-header" id="headingThree">
@@ -307,9 +310,8 @@
          </div>
       </div>
    </div>
-   <br>
-   <hr>
-   <br>
+   </div>
+
 
 
    <!-- Modal -->
@@ -372,10 +374,10 @@
 
             <!-- Trailer YouTube -->
             <div class="embed-responsive embed-responsive-16by9">
-                 <iframe class="embed-responsive-item px-2 py-2"
-                    src="https://www.youtube.com/embed/z2cgCzKR2mE?rel=0&amp;autoplay=0" frameborder="0"
-                    allowfullscreen></iframe>
-              </div>
+               <iframe class="embed-responsive-item px-2 py-2"
+                  src="https://www.youtube.com/embed/z2cgCzKR2mE?rel=0&amp;autoplay=0" frameborder="0"
+                  allowfullscreen></iframe>
+            </div>
 
             <div class="modal-body text-center">
                Ça commence dans le Nord.
@@ -490,10 +492,10 @@
 
             <!-- Trailer YouTube -->
             <div class="embed-responsive embed-responsive-16by9">
-                <iframe class="embed-responsive-item px-2 py-2"
-                   src="https://www.youtube.com/embed/kI90CvU0P_c?rel=0&amp;autoplay=0" frameborder="0"
-                   allowfullscreen></iframe>
-             </div>
+               <iframe class="embed-responsive-item px-2 py-2"
+                  src="https://www.youtube.com/embed/kI90CvU0P_c?rel=0&amp;autoplay=0" frameborder="0"
+                  allowfullscreen></iframe>
+            </div>
 
             <div class="modal-body text-center">
                L’histoire surréelle et poétique d’un jeune homme idéaliste et inventif, Colin, qui rencontre Chloé, une
@@ -766,9 +768,9 @@
 
    <!-- Booking Form -->
 
-
-   <section class="reservation bg-light py-3 text-lighter" id="reservation">
-      <div class="container">
+<div class="container">
+   <section class="reservation bg-light py-3 px-4 mb-5 text-lighter" id="reservation">
+      
 
          <h2 class="text-center pb-2">Réserver en ligne !</h2>
          <hr>
@@ -846,12 +848,12 @@
             </div>
             <br>
             <div class="col text-center">
-               <button type="submit" class="btn btn-outline-dark mt-3">Réserver !</button>
+               <button type="submit" class="btn btn-outline-warning btn-lg mt-3">Réserver !</button>
             </div>
          </form>
-      </div>
+      
    </section>
-
+</div>
 
    <!-- Footer -->
 
@@ -886,6 +888,7 @@
    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
    </script>
+   <script src="app.js"></script>
 </body>
 
 </html>
