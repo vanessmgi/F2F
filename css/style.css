@@ -15,7 +15,7 @@ h1, h2, h3, h4, h5, h6 {
 .reservation {
    background-image:
       linear-gradient(rgba(255, 255, 255, 0.24), rgba(255, 174, 0, 0.336)), 
-      url('/img/moonlightcinema.jpg');
+      url('../img/moonlightcinema.jpg');
    font-weight: 700;
    box-shadow: 1px 1px 15px #555;
 }
