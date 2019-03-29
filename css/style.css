@@ -4,9 +4,10 @@
 
 */
 
+
+
 .card {
    background-color: rgba(43, 43, 43, 0.555);
-   border-radius: 0 20px 20px 0;
 }
 
 /* General */
@@ -50,6 +51,9 @@ h1, h2, h3, h4, h5, h6 {
 
 .banniere {
    background-image: url('../img/banniere.jpg');
+   background-size: cover;
+   
+
 }
 
 .btn-outline-warning:hover {
@@ -82,7 +86,7 @@ h1, h2, h3, h4, h5, h6 {
       url('../img/stars.jpg');
    font-weight: 700;
    box-shadow: 1px 1px 15px #555;
-   border-radius: 20px;
+   border-radius: 5px;
 }
 
 

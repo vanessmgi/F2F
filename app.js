@@ -1,7 +1,7 @@
-$(document).ready(function () {
-   var closeBtn = $('.close');
+// $(document).ready(function () {
+//    var closeBtn = $('.close');
 
-   closeBtn.on('click', function () {
-      $('iframe').attr('src', $('iframe').attr('src'));
-   })
-})
+//    closeBtn.on('click', function () {
+//       $('iframe').attr('src', $('iframe').attr('src'));
+//    })
+// })
