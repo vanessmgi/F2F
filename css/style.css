@@ -13,8 +13,11 @@
 
 body {
    font-family: "Open Sans", sans-serif;
-   background-color: #0c0c0cfa;
    margin-top: 90px;
+}
+
+.main-wrapper {
+    background-color: #0c0c0cfa;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -103,7 +106,8 @@ h1, h2, h3, h4, h5, h6 {
 .footer {
    line-height: 10px;
    /* background-color: #ffc107; */
-   background-image: url('../img/arplan.jpg')
+   background-image: url('../img/arplan.jpg');
+   background-size: cover;
 }
 
 .fa-facebook-square,
