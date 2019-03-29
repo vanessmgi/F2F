@@ -1,6 +1,20 @@
+/* Colors
+ 
+
+
+*/
+
+.card {
+   background-color: rgba(43, 43, 43, 0.555);
+   border-radius: 0 20px 20px 0;
+}
+
+/* General */
+
 body {
    font-family: "Open Sans", sans-serif;
-   background-color: rgba(0, 0, 0, 0.068);
+   background-color: #0c0c0cfa;
+   margin-top: 90px;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -8,59 +22,41 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
+/* Menu */
+
+.bg-custom {
+   background-color: #ffc107;
+}
+
+.bg-warning,
+.dropdown-menu {
+   background-color: #ffc107;
+}
+
+.nav-link {
+   color: black;
+   font-size: 20px;
+}
+.nav-link:hover {
+   color: rgba(255, 255, 255, 0.438);
+   font-size: 20px;
+}
+
+
+/* Bannière / Button */
+
 .banniere {
    background-image: url('../img/banniere.jpg');
 }
 
-.reservation {
-   background-image:
-      linear-gradient(rgba(255, 255, 255, 0.24), rgba(255, 174, 0, 0.336)), 
-      url('../img/moonlightcinema.jpg');
-   font-weight: 700;
-   box-shadow: 1px 1px 15px #555;
+.btn-outline-warning:hover {
+   color: rgb(255, 255, 255);
+   background-color: #dfa700dc;
 }
 
-
-.form-control {
-   background-color: rgba(0, 0, 0, 0.2);
-   border: 1px solid black;
-   color: rgba(0, 0, 0, 0.678);
-   
-}
-
-
-.fa-facebook-square,
-.fa-twitter-square,
-.fa-instagram,
-.fa-pinterest-square {
-   color: black;
-   size: 5px;
-}
-
-
-.fa-facebook-square:hover,
-.fa-twitter-square:hover,
-.fa-instagram:hover,
-.fa-pinterest-square:hover {
-   color: rgb(255, 93, 0);
-}
-
-
-.nav-link {
-   letter-spacing: 3px;
-}
-
-.alert-custom {
-   background-color: #ffc10765;
-   box-shadow: 1px 1px 15px #555;
-}
-
-.menu {
-   background-color: #ffc107;
-}
-
-.maps {
-   box-shadow: 1px 1px 12px #555;
+.navbar-brand {
+   padding: 0;
+   margin: 0;
 }
 
 .dropdown-item:hover {
@@ -68,33 +64,70 @@ h1, h2, h3, h4, h5, h6 {
    text-decoration: underline;
 }
 
-.bg-warning, .dropdown-menu {
-   background-image: 
-   linear-gradient(rgba(17, 0, 255, 0.075), rgba(151, 38, 38, 0.589));
+
+/* Forms */
+
+.form-control {
+   background-color: rgba(0, 0, 0, 0);
+   border: 1px solid #ffffff73;
+   color: rgb(0, 0, 0);
 }
 
-.navbar-brand {
-padding: 0;
-margin: 0;
+.reservation {
+   background-image:
+      linear-gradient(rgba(255, 193, 7, 0.89), rgba(255, 255, 255, 0.185)),
+      url('../img/stars.jpg');
+   font-weight: 700;
+   box-shadow: 1px 1px 15px #555;
+   border-radius: 20px;
 }
+
+
+/* Shadow */
+
+.alert-custom {
+   background-color: rgb(255, 193, 7);
+   box-shadow: 1px 1px 15px #555;
+}
+
+
+/* Google Maps */
+
+.maps {
+   box-shadow: 1px 1px 12px #555;
+}
+
+
+/* Footer / Social Network */
 
 .footer {
    line-height: 10px;
+   /* background-color: #ffc107; */
+   background-image: url('../img/arplan.jpg')
 }
 
-.btn-outline-warning:hover {
-   background-color : #dfa700dc;
-   color: rgb(255, 255, 255);
+.fa-facebook-square,
+.fa-twitter-square,
+.fa-instagram,
+.fa-pinterest-square {
+   color: #ffc107;
+   size: 5px;
 }
 
-
+.fa-facebook-square:hover,
+.fa-twitter-square:hover,
+.fa-instagram:hover,
+.fa-pinterest-square:hover {
+   color: rgb(255, 93, 0);
+   font-size: 25px;
+}
 
 
 /* Slider */
 
 .timeline a {
    text-decoration: none;
-   color: #000000;
+   color: #ffc107;
 }
 
 ul.timeline {
@@ -104,7 +137,7 @@ ul.timeline {
 
 ul.timeline:before {
    content: ' ';
-   background: #d4d9df;
+   background: #ffc107;
    display: inline-block;
    position: absolute;
    left: 29px;
