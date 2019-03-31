@@ -28,9 +28,7 @@
 <body>
 
 
-
-   <!-- Logo / Navbar -->
-
+   <!------------------------------------------ Logo / Navbar ------------------------------------------>
 
    <header>
       <nav class="navbar navbar-light bg-custom navbar-expand-lg text-center fixed-top">
@@ -62,8 +60,8 @@
                         Français
                      </a>
                      <div class="dropdown-menu menu text-center" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Anglais</a>
-                        <a class="dropdown-item" href="#">Espagnol</a>
+                        <a class="dropdown-item text-dark" href="#">Anglais</a>
+                        <a class="dropdown-item text-dark" href="#">Espagnol</a>
                      </div>
                   </li>
                </ul>
@@ -73,8 +71,7 @@
    </header>
 
 
-   <!-- Banner -->
-
+   <!------------------------------------------ Banner ------------------------------------------>
 
    <section class="banniere p-5 text-center">
       <div class="container">
@@ -92,11 +89,12 @@
    </section>
 
 
-   <!-- Jumbotron -->
+   <!------------------------------------------ Jumbotron ------------------------------------------>
 
    <section>
       <div class="alert alert-custom text-center pt-5 pb-5 mb-0" role="alert">
-         <p class="col-md-8 offset-md-2">L'association "Les Films de Plein Air" vient d'obtenir l'autorisation de
+         <p class="col-md-8 offset-md-2 font-weight-bold">L'association "Les Films de Plein Air" vient d'obtenir
+            l'autorisation de
             projeter au parc Monceau, du 5 au 8
             août chaque soir, de 18 h à minuit, venez découvrir les films d'auteur.
             L'accès aux projections est totalement
@@ -107,33 +105,92 @@
    </section>
 
 
-   <!-- Cards -->
+   <!-- ---------------------------------------- Cards / Movies ---------------------------------------- -->
 
-   <div class="main-wrapper pt-5">
+
+   <!-- -------------------- Persepolis -------------------- -->
+
+   <div class="main-wrapper pt-5" id="films">
       <div class="container text-warning">
 
          <div class="card mb-3">
             <div class="row">
                <div class="col-md-4 text-center text-md-left">
-                  <img src="../img/films/films-icones/persepolis.jpg" class="img-thumbnail" alt="...">
+                  <img src="../img/films/films-icones/persepolis.jpg" class="img-thumbnail mt-1" alt="...">
                </div>
                <div class="col-md-8">
                   <div class="card-body mb-2 mb-lg-5">
                      <h5 class="card-title">Persepolis</h5>
-                     <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                        additional content. This content is a little bit longer.</p>
-                     <p class="card-text"><small class="text-white font-italic">Last updated 3 mins ago</small></p>
+                     <p class="card-text text-light text-justify text-justify">Persepolis est un long métrage
+                        d'animation français réalisé par Vincent
+                        Paronnaud et Marjane Satrapi, sorti en France le 27 juin 2007. Le film s'inspire de Persepolis,
+                        la bande dessinée autobiographique de Marjane Satrapi.</p>
+                     <p class="card-text"><i class="fas fa-video pr-3"></i><small class="text-white font-italic">Jeudi 5
+                           août à 18h</small></p>
                   </div>
 
                   <!-- Button modal -->
-                  <button type="button"
-                     class="btn btn-outline-warning text-warning btn-small offset-5 offset-lg-10 mb-2"
+                  <button type="button" class="btn btn-outline-warning text-white btn-small offset-5 offset-lg-10 mb-2"
                      data-toggle="modal" data-target="#persepolis">
-                     La suite
+                     Synopsis
                   </button>
                </div>
             </div>
          </div>
+
+         <!--- Modal Persepolis --->
+
+         <div class="modal fade text-light" id="persepolis" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+               <div class="modal-content">
+                  <div class="modal-header">
+                     <h5 class="modal-title text-center text-warning" id="resume">Résumé</h5>
+                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                     </button>
+                  </div>
+
+                  <!-- Trailer YouTube -->
+                  <div class="embed-responsive embed-responsive-16by9">
+                     <iframe class="embed-responsive-item px-2 py-2"
+                        src="https://www.youtube.com/embed/VNUGHxZviag?rel=0&amp;autoplay=0" frameborder="0"
+                        allowfullscreen></iframe>
+                  </div>
+
+                  <div class="modal-body text-justify">
+                     Téhéran 1978 : Marjane, huit ans, songe à l'avenir et se rêve en prophète sauvant le monde. Choyée
+                     par des parents
+                     modernes et cultivés, particulièrement liée à sa grand-mère, elle suit avec exaltation les
+                     évènements
+                     qui vont mener à
+                     la révolution et provoquer la chute du régime du Chah.
+                     Avec l'instauration de la République islamique débute le temps des "commissaires de la révolution"
+                     qui contrôlent
+                     tenues et comportements. Marjane qui doit porter le voile, se rêve désormais en révolutionnaire.
+                     Bientôt, la guerre contre l'Irak entraîne bombardements, privations, et disparitions de proches.
+                     La
+                     répression
+                     intérieure devient chaque jour plus sévère.
+                     Dans un contexte de plus en plus pénible, sa langue bien pendue et ses positions rebelles
+                     deviennent
+                     problématiques.
+                     Ses parents décident alors de l'envoyer en Autriche pour la protéger.
+                     A Vienne, Marjane vit à quatorze ans sa deuxième révolution : l'adolescence, la liberté, les
+                     vertiges
+                     de l'amour mais
+                     aussi l'exil, la solitude et la différence.
+                     <hr>
+                     <p class="text-warning">à partir de 10 ans - VF - 1h35</p>
+                  </div>
+                  <div class="modal-footer">
+                     <button type="button" class="btn btn-outline-warning" data-dismiss="modal">Fermer</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+
+   <!-- -------------------- De rouille et d'os -------------------- -->
 
          <div class="card mb-3">
             <div class="row">
@@ -143,20 +200,81 @@
                <div class="col-md-8">
                   <div class="card-body mb-2 mb-lg-5">
                      <h5 class="card-title">De rouille et d'os</h5>
-                     <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                        additional content. This content is a little bit longer.</p>
-                     <p class="card-text"><small class="text-white font-italic">Last updated 3 mins ago</small></p>
+                     <p class="card-text text-light text-justify">De rouille et d'os est un film franco-belge coécrit et
+                        réalisé par Jacques Audiard, sorti en 2012.
+                        Le film met en scène dans les rôles principaux l'actrice française Marion Cotillard et
+                        le Belge Matthias Schoenaerts, révélé par Bullhead.</p>
+
+                     <p class="card-text"><i class="fas fa-video pr-3"></i><small class="text-white font-italic">Jeudi à
+                           août à 20h</small></p>
                   </div>
 
                   <!-- Button modal -->
-                  <button type="button"
-                     class="btn btn-outline-warning text-warning btn-small offset-5 offset-lg-10 mb-2"
+                  <button type="button" class="btn btn-outline-warning text-white btn-small offset-5 offset-lg-10 mb-2"
                      data-toggle="modal" data-target="#rouille">
-                     La suite
+                     Synopsis
                   </button>
                </div>
             </div>
          </div>
+
+         <!--- Modal De rouille et d'os --->
+
+         <div class="modal fade text-light" id="rouille" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+               <div class="modal-content">
+                  <div class="modal-header">
+                     <h5 class="modal-title text-warning" id="resume">Résumé</h5>
+                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                     </button>
+                  </div>
+
+                  <!-- Trailer YouTube -->
+                  <div class="embed-responsive embed-responsive-16by9">
+                     <iframe class="embed-responsive-item px-2 py-2"
+                        src="https://www.youtube.com/embed/z2cgCzKR2mE?rel=0&amp;autoplay=0" frameborder="0"
+                        allowfullscreen></iframe>
+                  </div>
+
+                  <div class="modal-body text-justify">
+                     Ça commence dans le Nord.
+                     Ali se retrouve avec Sam, 5 ans, sur les bras. C’est son fils, il le connaît à peine. Sans
+                     domicile,
+                     sans argent et
+                     sans amis, Ali trouve refuge chez sa sœur à Antibes. Là-bas, c’est tout de suite mieux, elle
+                     les
+                     héberge
+                     dans le garage
+                     de son pavillon, elle s’occupe du petit et il fait beau.
+                     A la suite d’une bagarre dans une boîte de nuit, son destin croise celui de Stéphanie. Il la
+                     ramène
+                     chez
+                     elle et lui
+                     laisse son téléphone.
+                     Il est pauvre ; elle est belle et pleine d’assurance. C’est une princesse. Tout les oppose.
+                     Stéphanie est dresseuse d’orques au Marineland. Il faudra que le spectacle tourne au drame
+                     pour qu’un
+                     coup de téléphone
+                     dans la nuit les réunisse à nouveau.
+                     Quand Ali la retrouve, la princesse est tassée dans un fauteuil roulant : elle a perdu ses
+                     jambes et
+                     pas
+                     mal
+                     d’illusions.
+                     Il va l’aider simplement, sans compassion, sans pitié. Elle va revivre.
+                     <hr>
+                     <p class="text-warning">à partir de 10 ans - VF - 2h - Drame</p>
+                  </div>
+                  <div class="modal-footer">
+                     <button type="button" class="btn btn-outline-warning" data-dismiss="modal">Fermer</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+
+   <!-- -------------------- Patients -------------------- -->
 
          <div class="card mb-3">
             <div class="row">
@@ -166,20 +284,69 @@
                <div class="col-md-8">
                   <div class="card-body mb-2 mb-lg-5">
                      <h5 class="card-title">Patients</h5>
-                     <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                        additional content. This content is a little bit longer.</p>
-                     <p class="card-text"><small class="text-white font-italic">Last updated 3 mins ago</small></p>
+                     <p class="card-text text-white text-justify">Patients est une comédie dramatique française réalisée
+                        par Grand
+                        Corps Malade
+                        et Mehdi Idir, sortie en 2017. Il s'agit de l'adaptation du roman autobiographique éponyme de
+                        Grand Corps Malade.</p>
+
+                     <p class="card-text"><i class="fas fa-video pr-3"></i><small class="text-white font-italic">Jeud 5
+                           août à 22h</small></p>
                   </div>
 
                   <!-- Button modal -->
-                  <button type="button"
-                     class="btn btn-outline-warning text-warning btn-small offset-5 offset-lg-10 mb-2"
+                  <button type="button" class="btn btn-outline-warning text-white btn-small offset-5 offset-lg-10 mb-2"
                      data-toggle="modal" data-target="#patients">
-                     La suite
+                     Synopsis
                   </button>
                </div>
             </div>
          </div>
+
+         <!--- Modal Patients --->
+
+         <div class="modal fade text-light" id="patients" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+               <div class="modal-content">
+                  <div class="modal-header">
+                     <h5 class="modal-title text-warning" id="resume">Résumé</h5>
+                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                     </button>
+                  </div>
+
+                  <!-- Trailer YouTube -->
+                  <div class="embed-responsive embed-responsive-16by9">
+                     <iframe class="embed-responsive-item px-2 py-2"
+                        src="https://www.youtube.com/embed/A02Xmwng9OA?rel=0&amp;autoplay=0" frameborder="0"
+                        allowfullscreen></iframe>
+                  </div>
+
+                  <div class="modal-body text-justify">
+                     Se laver, s'habiller, marcher, jouer au basket, voici ce que Ben ne peut plus faire à son arrivée
+                     dans
+                     un centre de
+                     rééducation suite à un grave accident. Ses nouveaux amis sont tétras, paras, traumas crâniens....
+                     Bref,
+                     toute la crème
+                     du handicap. Ensemble ils vont apprendre la patience. Ils vont résister, se vanner, s'engueuler, se
+                     séduire mais
+                     surtout trouver l'énergie pour réapprendre à vivre. Patients est l'histoire d'une renaissance, d'un
+                     voyage chaotique
+                     fait de victoires et de défaites, de larmes et d’éclats de rire, mais surtout de rencontres : on ne
+                     guérit pas seul.
+                     <hr>
+                     <p class="text-warning">à partir de 10 ans - VF - 1h52 - Drame/Comédie</p>
+                  </div>
+                  <div class="modal-footer">
+                     <button type="button" class="btn btn-outline-warning" data-dismiss="modal">Fermer</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+
+   <!-- -------------------- Je vais bien ne t'en fais pas -------------------- -->
 
          <div class="card mb-3">
             <div class="row">
@@ -189,20 +356,68 @@
                <div class="col-md-8">
                   <div class="card-body mb-2 mb-lg-5" mb-2 mb-lg-5>
                      <h5 class="card-title">Je vais bien ne t'en fais pas</h5>
-                     <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                        additional content. This content is a little bit longer.</p>
-                     <p class="card-text"><small class="text-white font-italic">Last updated 3 mins ago</small></p>
+                     <p class="card-text text-light text-justify">Je vais bien, ne t'en fais pas est un film français
+                        réalisé en 2006
+                        par
+                        Philippe Lioret, adapté du roman éponyme d'Olivier Adam paru en 2000.</p>
+
+                     <p class="card-text"><i class="fas fa-video pr-3"></i><small
+                           class="text-white font-italic">Vendredi 6
+                           août à 18h</small></p>
                   </div>
 
                   <!-- Button modal -->
-                  <button type="button"
-                     class="btn btn-outline-warning text-warning btn-small offset-5 offset-lg-10 mb-2"
+                  <button type="button" class="btn btn-outline-warning text-white btn-small offset-5 offset-lg-10 mb-2"
                      data-toggle="modal" data-target="#jeVaisBien">
-                     La suite
+                     Synopsis
                   </button>
                </div>
             </div>
          </div>
+
+         <!--- Modal Je vais bien ne t'en fais pas --->
+
+         <div class="modal fade text-light" id="jeVaisBien" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+               <div class="modal-content">
+                  <div class="modal-header">
+                     <h5 class="modal-title text-warning" id="resume">Résumé</h5>
+                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                     </button>
+                  </div>
+
+                  <!-- Trailer YouTube -->
+                  <div class="embed-responsive embed-responsive-16by9">
+                     <iframe class="embed-responsive-item px-2 py-2"
+                        src="https://www.youtube.com/embed/HWCIu0Ll91s?rel=0&amp;autoplay=0" frameborder="0"
+                        allowfullscreen></iframe>
+                  </div>
+
+                  <div class="modal-body text-justify">
+                     Comme elle rentre de vacances, Lili, 19 ans, apprend par ses parents que Loïc, son frère jumeau,
+                     suite
+                     à
+                     une violente
+                     dispute avec son père, a quitté la maison.
+                     Loïc ne lui donnant pas de nouvelles, Lili finit par se persuader qu'il lui est arrivé quelque
+                     chose
+                     et
+                     part à sa
+                     recherche.
+                     Ce qu'elle va découvrir dépasse l'entendement.
+                     <hr>
+                     <p class="text-warning">à partir de 10 ans - VF - 1h40 - Drame</p>
+                  </div>
+                  <div class="modal-footer">
+                     <button type="button" class="btn btn-outline-warning" data-dismiss="modal">Fermer</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+
+   <!-- -------------------- L'écume des jours -------------------- -->
 
          <div class="card mb-3">
             <div class="row">
@@ -212,20 +427,72 @@
                <div class="col-md-8">
                   <div class="card-body mb-2 mb-lg-5">
                      <h5 class="card-title">L'écume des jours</h5>
-                     <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                        additional content. This content is a little bit longer.</p>
-                     <p class="card-text"><small class="text-white font-italic">Last updated 3 mins ago</small></p>
+                     <p class="card-text text-light text-justify">L’Écume des jours est un film français réalisé par
+                        Michel Gondry,
+                        sorti en 2013. C'est une adaptation cinématographique de l’œuvre éponyme de Boris Vian.</p>
+
+                     <p class="card-text"><i class="fas fa-video pr-3"></i><small
+                           class="text-white font-italic">Vendredi 6
+                           août à 20h</small></p>
                   </div>
 
                   <!-- Button modal -->
-                  <button type="button"
-                     class="btn btn-outline-warning text-warning btn-small offset-5 offset-lg-10 mb-2"
+                  <button type="button" class="btn btn-outline-warning text-white btn-small offset-5 offset-lg-10 mb-2"
                      data-toggle="modal" data-target="#ecume">
-                     La suite
+                     Synopsis
                   </button>
                </div>
             </div>
          </div>
+
+         <!-- Modal l'Ecume des jours -->
+
+         <div class="modal fade text-light" id="ecume" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+               <div class="modal-content">
+                  <div class="modal-header">
+                     <h5 class="modal-title text-warning" id="resume">Résumé</h5>
+                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                     </button>
+                  </div>
+
+                  <!-- Trailer YouTube -->
+                  <div class="embed-responsive embed-responsive-16by9">
+                     <iframe class="embed-responsive-item px-2 py-2"
+                        src="https://www.youtube.com/embed/kI90CvU0P_c?rel=0&amp;autoplay=0" frameborder="0"
+                        allowfullscreen></iframe>
+                  </div>
+
+                  <div class="modal-body text-justify">
+                     L’histoire surréelle et poétique d’un jeune homme idéaliste et inventif, Colin, qui rencontre
+                     Chloé,
+                     une
+                     jeune femme
+                     semblant être l’incarnation d’un blues de Duke Ellington. Leur mariage idyllique tourne à
+                     l’amertume
+                     quand Chloé tombe
+                     malade d’un nénuphar qui grandit dans son poumon. Pour payer ses soins, dans un Paris
+                     fantasmatique,
+                     Colin doit
+                     travailler dans des conditions de plus en plus absurdes, pendant qu’autour d’eux leur
+                     appartement se
+                     dégrade et que
+                     leur groupe d’amis, dont le talentueux Nicolas, et Chick, fanatique du philosophe Jean-Sol
+                     Partre, se
+                     délite.
+                     <hr>
+                     <p class="text-warning">à partir de 10 ans - VF - 1h30 - Comédie dramatique</p>
+                  </div>
+                  <div class="modal-footer">
+                     <button type="button" class="btn btn-outline-warning" data-dismiss="modal">Fermer</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+
+   <!-- -------------------- La haine -------------------- -->
 
          <div class="card mb-3">
             <div class="row">
@@ -235,20 +502,65 @@
                <div class="col-md-8">
                   <div class="card-body mb-2 mb-lg-5">
                      <h5 class="card-title">La Haine</h5>
-                     <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                        additional content. This content is a little bit longer.</p>
-                     <p class="card-text"><small class="text-white font-italic">Last updated 3 mins ago</small></p>
+                     <p class="card-text text-light text-justify">La Haine est un film dramatique français en noir et
+                        blanc écrit et
+                        réalisé par Mathieu Kassovitz, sorti en 1995.</p>
+
+                     <p class="card-text"><i class="fas fa-video pr-3"></i><small
+                           class="text-white font-italic">Vendredi 6
+                           août à 22h</small></p>
                   </div>
 
                   <!-- Button modal -->
-                  <button type="button"
-                     class="btn btn-outline-warning text-warning btn-small offset-5 offset-lg-10 mb-2"
+                  <button type="button" class="btn btn-outline-warning text-white btn-small offset-5 offset-lg-10 mb-2"
                      data-toggle="modal" data-target="#laHaine">
-                     La suite
+                     Synopsis
                   </button>
                </div>
             </div>
          </div>
+
+         <!--- Modal La haine --->
+
+         <div class="modal fade text-light" id="laHaine" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+               <div class="modal-content">
+                  <div class="modal-header">
+                     <h5 class="modal-title text-warning" id="resume">Résumé</h5>
+                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                     </button>
+                  </div>
+
+                  <!-- Trailer YouTube -->
+                  <div class="embed-responsive embed-responsive-16by9">
+                     <iframe class="embed-responsive-item px-2 py-2"
+                        src="https://www.youtube.com/embed/G65Y-yr4M4o?rel=0&amp;autoplay=0" frameborder="0"
+                        allowfullscreen></iframe>
+                  </div>
+
+                  <div class="modal-body text-justify">
+                     Trois copains d'une banlieue ordinaire traînent leur ennui et leur jeunesse qui se perd. Ils
+                     vont
+                     vivre
+                     la journée la
+                     plus importante de leur vie après une nuit d'émeutes provoquée par le passage à tabac d'Abdel
+                     Ichah
+                     par
+                     un inspecteur
+                     de police lors d'un interrogatoire.
+                     <hr>
+                     <p class="text-warning">à partir de 12 ans - VF - 1h35 - Drame</p>
+                  </div>
+                  <div class="modal-footer">
+                     <button type="button" class="btn btn-outline-warning" data-dismiss="modal">Fermer</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+
+   <!-- -------------------- Polisse -------------------- -->
 
          <div class="card mb-3">
             <div class="row">
@@ -258,20 +570,80 @@
                <div class="col-md-8">
                   <div class="card-body mb-2 mb-lg-5">
                      <h5 class="card-title">Polisse</h5>
-                     <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                        additional content. This content is a little bit longer.</p>
-                     <p class="card-text"><small class="text-white font-italic">Last updated 3 mins ago</small></p>
+                     <p class="card-text text-light text-justify">Polisse est un film dramatique français écrit et
+                        réalisé par
+                        Maïwenn, sorti en 2011. Il a été présenté en compétition officielle au Festival de Cannes 2011
+                        où il reçoit le prix du jury. Il a reçu deux César en 2012, celui du meilleur espoir féminin et
+                        du meilleur montage.</p>
+                     <p class="card-text"><i class="fas fa-video pr-3"></i><small class="text-white font-italic">Samedi
+                           7 août à 18h</small></p>
                   </div>
 
                   <!-- Button modal -->
-                  <button type="button"
-                     class="btn btn-outline-warning text-warning btn-small offset-5 offset-lg-10 mb-2"
+                  <button type="button" class="btn btn-outline-warning text-white btn-small offset-5 offset-lg-10 mb-2"
                      data-toggle="modal" data-target="#polisse">
-                     La suite
+                     Synopsis
                   </button>
                </div>
             </div>
          </div>
+
+         <!--- Modal Polisse --->
+
+         <div class="modal fade text-light" id="polisse" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+               <div class="modal-content">
+                  <div class="modal-header">
+                     <h5 class="modal-title text-warning" id="resume">Résumé</h5>
+                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                     </button>
+                  </div>
+
+                  <!-- Trailer YouTube -->
+                  <div class="embed-responsive embed-responsive-16by9">
+                     <iframe class="embed-responsive-item px-2 py-2"
+                        src="https://www.youtube.com/embed/mfrxqJpJeIA?rel=0&amp;autoplay=0" frameborder="0"
+                        allowfullscreen></iframe>
+                  </div>
+
+                  <div class="modal-body text-justify">
+                     Le quotidien des policiers de la BPM (Brigade de Protection des Mineurs) ce sont les gardes à
+                     vue de
+                     pédophiles, les
+                     arrestations de pickpockets mineurs mais aussi la pause déjeuner où l’on se raconte ses
+                     problèmes de
+                     couple ; ce sont
+                     les auditions de parents maltraitants, les dépositions des enfants, les dérives de la
+                     sexualité chez
+                     les
+                     adolescents,
+                     mais aussi la solidarité entre collègues et les fous rires incontrôlables dans les moments
+                     les plus
+                     impensables ; c’est
+                     savoir que le pire existe, et tenter de faire avec… Comment ces policiers parviennent-ils à
+                     trouver
+                     l’équilibre entre
+                     leurs vies privées et la réalité à laquelle ils sont confrontés, tous les jours ? Fred,
+                     l’écorché du
+                     groupe, aura du
+                     mal à supporter le regard de Melissa, mandatée par le ministère de l’intérieur pour réaliser
+                     un livre
+                     de
+                     photos sur
+                     cette brigade.
+                     <hr>
+                     <p class="text-warning">à partir de 12 ans - VF - 2h07 - Drame</p>
+                  </div>
+                  <div class="modal-footer">
+                     <button type="button" class="btn btn-outline-warning" data-dismiss="modal">Fermer</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+
+   <!-- -------------------- La vie d'Adèle -------------------- -->
 
          <div class="card mb-3">
             <div class="row">
@@ -281,20 +653,64 @@
                <div class="col-md-8">
                   <div class="card-body mb-2 mb-lg-5">
                      <h5 class="card-title">La vie d'Adèle</h5>
-                     <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                        additional content. This content is a little bit longer.</p>
-                     <p class="card-text"><small class="text-white font-italic">Last updated 3 mins ago</small></p>
+                     <p class="card-text text-light text-justify">La Vie d'Adèle : Chapitres 1, souvent désigné
+                        simplement sous
+                        le titre La Vie d'Adèle, est une romance belgo-hispano-française écrite, produite et réalisée
+                        par Abdellatif Kechiche, sortie en 2013.</p>
+                     <p class="card-text"><i class="fas fa-video pr-3"></i><small class="text-white font-italic">Samedi
+                           7
+                           août à 20h</small></p>
                   </div>
-
                   <!-- Button modal -->
-                  <button type="button"
-                     class="btn btn-outline-warning text-warning btn-small offset-5 offset-lg-10 mb-2"
+                  <button type="button" class="btn btn-outline-warning text-white btn-small offset-5 offset-lg-10 mb-2"
                      data-toggle="modal" data-target="#vieAdele">
-                     La suite
+                     Synopsis
                   </button>
                </div>
             </div>
          </div>
+
+         <!--- Modal La vie d'Adèle --->
+
+         <div class="modal fade text-light" id="vieAdele" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+               <div class="modal-content">
+                  <div class="modal-header">
+                     <h5 class="modal-title text-warning" id="resume">Résumé</h5>
+                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                     </button>
+                  </div>
+
+                  <!-- Trailer YouTube -->
+                  <div class="embed-responsive embed-responsive-16by9">
+                     <iframe class="embed-responsive-item px-2 py-2"
+                        src="https://www.youtube.com/embed/I46FzNqIY0c?rel=0&amp;autoplay=0" frameborder="0"
+                        allowfullscreen></iframe>
+                  </div>
+
+                  <div class="modal-body text-justify">
+                     À 15 ans, Adèle ne se pose pas de question : une fille, ça sort avec des garçons. Sa vie
+                     bascule le
+                     jour
+                     où elle
+                     rencontre Emma, une jeune femme aux cheveux bleus, qui lui fait découvrir le désir et lui
+                     permettra de
+                     s’affirmer en
+                     tant que femme et adulte. Face au regard des autres Adèle grandit, se cherche, se perd, se
+                     trouve...
+                     <hr>
+                     <p class="text-warning">à partir de 12 ans - VF - 2h57 - Drame / Romance</p>
+                  </div>
+                  <div class="modal-footer">
+                     <button type="button" class="btn btn-outline-warning" data-dismiss="modal">Fermer</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+
+   <!-- -------------------- 120 battements par minute -------------------- -->
 
          <div class="card mb-3">
             <div class="row">
@@ -304,20 +720,60 @@
                <div class="col-md-8">
                   <div class="card-body mb-2 mb-lg-5">
                      <h5 class="card-title">120 battements par minute</h5>
-                     <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                        additional content. This content is a little bit longer.</p>
-                     <p class="card-text"><small class="text-white font-italic">Last updated 3 mins ago</small></p>
+                     <p class="card-text text-light text-justify">120 battements par minute est un film dramatique
+                        français coécrit
+                        et réalisé par Robin Campillo, sorti en 2017.</p>
+                     <p class="card-text"><i class="fas fa-video pr-3"></i><small class="text-white font-italic">Samedi
+                           7
+                           août à 22h</small></p>
                   </div>
 
                   <!-- Button modal -->
-                  <button type="button"
-                     class="btn btn-outline-warning text-warning btn-small offset-5 offset-lg-10 mb-2"
+                  <button type="button" class="btn btn-outline-warning text-white btn-small offset-5 offset-lg-10 mb-2"
                      data-toggle="modal" data-target="#battements">
-                     La suite
+                     Synopsis
                   </button>
                </div>
             </div>
          </div>
+
+         <!--- Modal 120 battements par minute --->
+
+         <div class="modal fade text-light" id="battements" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+               <div class="modal-content">
+                  <div class="modal-header">
+                     <h5 class="modal-title text-warning" id="resume">Résumé</h5>
+                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                     </button>
+                  </div>
+
+                  <!-- Trailer YouTube -->
+                  <div class="embed-responsive embed-responsive-16by9">
+                     <iframe class="embed-responsive-item px-2 py-2"
+                        src="https://www.youtube.com/embed/_TEzcCV8c8E?rel=0&amp;autoplay=0" frameborder="0"
+                        allowfullscreen></iframe>
+                  </div>
+
+                  <div class="modal-body text-justify">
+                     Début des années 90. Alors que le sida tue depuis près de dix ans, les militants d'Act
+                     Up-Paris
+                     multiplient les actions
+                     pour lutter contre l'indifférence générale.
+                     Nouveau venu dans le groupe, Nathan va être bouleversé par la radicalité de Sean.
+                     <hr>
+                     <p class="text-warning">à partir de 12 ans - VF - 2h07 - Drame</p>
+                  </div>
+                  <div class="modal-footer">
+                     <button type="button" class="btn btn-outline-warning" data-dismiss="modal">Fermer</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+
+   <!-- -------------------- Hippocrate -------------------- -->
 
          <div class="card mb-3">
             <div class="row">
@@ -327,20 +783,69 @@
                <div class="col-md-8">
                   <div class="card-body mb-2 mb-lg-5">
                      <h5 class="card-title">Hippocrate</h5>
-                     <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                        additional content. This content is a little bit longer.</p>
-                     <p class="card-text"><small class="text-white font-italic">Last updated 3 mins ago</small></p>
+                     <p class="card-text text-light text-justify">Hippocrate est un film dramatique français réalisé par
+                        Thomas
+                        Lilti, sorti en 2014.</p>
+                     <p class="card-text"><i class="fas fa-video pr-3"></i><small
+                           class="text-white font-italic">Dimanche
+                           8 août à 18h</small></p>
                   </div>
 
                   <!-- Button modal -->
-                  <button type="button"
-                     class="btn btn-outline-warning text-warning btn-small offset-5 offset-lg-10 mb-2"
+                  <button type="button" class="btn btn-outline-warning text-white btn-small offset-5 offset-lg-10 mb-2"
                      data-toggle="modal" data-target="#hippocrate">
-                     La suite
+                     Synopsis
                   </button>
                </div>
             </div>
          </div>
+
+         <!--- Modal Hippocrate --->
+
+         <div class="modal fade text-light" id="hippocrate" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+               <div class="modal-content">
+                  <div class="modal-header">
+                     <h5 class="modal-title text-warning" id="resume">Résumé</h5>
+                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                     </button>
+                  </div>
+
+                  <!-- Trailer YouTube -->
+                  <div class="embed-responsive embed-responsive-16by9">
+                     <iframe class="embed-responsive-item px-2 py-2"
+                        src="https://www.youtube.com/embed/gZGY1Ncxv6M?rel=0&amp;autoplay=0" frameborder="0"
+                        allowfullscreen></iframe>
+                  </div>
+
+                  <div class="modal-body text-justify">
+                     Benjamin va devenir un grand médecin, il en est certain. Mais pour son premier stage
+                     d’interne dans le
+                     service de son
+                     père, rien ne se passe comme prévu. La pratique se révèle plus rude que la théorie. La
+                     responsabilité
+                     est écrasante,
+                     son père est aux abonnés absents et son co-interne, Abdel, est un médecin étranger plus
+                     expérimenté
+                     que
+                     lui. Benjamin
+                     va se confronter brutalement à ses limites, à ses peurs, celles de ses patients, des
+                     familles, des
+                     médecins, et du
+                     personnel. Son initiation commence.
+                     <hr>
+                     <p class="text-warning">à partir de 12 ans - VF - 1h42 - Comédie dramatique</p>
+                  </div>
+                  <div class="modal-footer">
+                     <button type="button" class="btn btn-outline-warning" data-dismiss="modal">Fermer</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+
+    <!-- -------------------- Huit Femmes -------------------- -->
 
          <div class="card mb-3">
             <div class="row">
@@ -350,20 +855,64 @@
                <div class="col-md-8">
                   <div class="card-body mb-2 mb-lg-5">
                      <h5 class="card-title">Huit femmes</h5>
-                     <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                        additional content. This content is a little bit longer.</p>
-                     <p class="card-text"><small class="text-white font-italic">Last updated 3 mins ago</small></p>
+                     <p class="card-text text-light text-justify">Huit femmes est un film franco-italien réalisé par
+                        François Ozon,
+                        sorti en 2002. Il s'agit d'une adaptation cinématographique de la pièce de théâtre du même nom
+                        de Robert Thomas.</p>
+                     <p class="card-text"><i class="fas fa-video pr-3"></i><small
+                           class="text-white font-italic">Dimanche
+                           8 août à 20h</small></p>
                   </div>
 
                   <!-- Button modal -->
-                  <button type="button"
-                     class="btn btn-outline-warning text-warning btn-small offset-5 offset-lg-10 mb-2"
+                  <button type="button" class="btn btn-outline-warning text-white btn-small offset-5 offset-lg-10 mb-2"
                      data-toggle="modal" data-target="#femmes">
-                     La suite
+                     Synopsis
                   </button>
                </div>
             </div>
          </div>
+
+         <!--- Modal Huit femmes --->
+
+         <div class="modal fade text-light" id="femmes" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+               <div class="modal-content">
+                  <div class="modal-header">
+                     <h5 class="modal-title text-warning" id="resume">Résumé</h5>
+                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                     </button>
+                  </div>
+
+                  <!-- Trailer YouTube -->
+                  <div class="embed-responsive embed-responsive-16by9">
+                     <iframe class="embed-responsive-item px-2 py-2"
+                        src="https://www.youtube.com/embed/jGyJL8SnsOM?rel=0&amp;autoplay=0" frameborder="0"
+                        allowfullscreen></iframe>
+                  </div>
+
+                  <div class="modal-body text-justify">
+                     Dans les années cinquante, dans une grande demeure bourgeoise en pleine campagne, les gens
+                     sont sur le
+                     point de fêter
+                     Noël. Mais un drame se produit : le maître de maison est retrouvé assassiné.
+                     Le ou plutôt la coupable se cache parmi huit femmes que fréquentait régulièrement la victime.
+                     Commence
+                     alors une longue
+                     journée d'enquête, faite de disputes, de trahisons et de révélations.
+                     <hr>
+                     <p class="text-warning">à partir de 12 ans - VF - 1h43 - Comédie / Policier</p>
+                  </div>
+                  <div class="modal-footer">
+                     <button type="button" class="btn btn-outline-warning" data-dismiss="modal">Fermer</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+
+   <!-- -------------------- Tomboy -------------------- -->
 
          <div class="card mb-5">
             <div class="row">
@@ -373,494 +922,69 @@
                <div class="col-md-8">
                   <div class="card-body mb-2 mb-lg-5">
                      <h5 class="card-title">Tomboy</h5>
-                     <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                        additional content. This content is a little bit longer.</p>
-                     <p class="card-text"><small class="text-white font-italic">Last updated 3 mins ago</small></p>
+                     <p class="card-text text-light text-justify">Tomboy est un film français écrit et réalisé par
+                        Céline Sciamma
+                        sorti en 2011.</p>
+                     <p class="card-text"><i class="fas fa-video pr-3"></i><small
+                           class="text-white font-italic">Dimanche
+                           8 août à 22h</small></p>
                   </div>
 
                   <!-- Button modal -->
-                  <button type="button"
-                     class="btn btn-outline-warning text-warning btn-small offset-5 offset-lg-10 mb-2"
+                  <button type="button" class="btn btn-outline-warning text-white btn-small offset-5 offset-lg-10 mb-2"
                      data-toggle="modal" data-target="#tomboy">
-                     La suite
+                     Synopsis
                   </button>
                </div>
             </div>
          </div>
       </div>
 
-      <!-- Modal -->
+         <!--- Modal Tomboy --->
 
+         <div class="modal fade text-light" id="tomboy" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+               <div class="modal-content">
+                  <div class="modal-header">
+                     <h5 class="modal-title text-warning" id="resume">Résumé</h5>
+                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                     </button>
+                  </div>
 
-      <div class="modal fade" id="persepolis" tabindex="-1" role="dialog">
-         <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-               <div class="modal-header">
-                  <h5 class="modal-title" id="resume">Résumé</h5>
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                     <span aria-hidden="true">&times;</span>
-                  </button>
-               </div>
+                  <!-- Trailer YouTube -->
+                  <div class="embed-responsive embed-responsive-16by9">
+                     <iframe class="embed-responsive-item px-2 py-2"
+                        src="https://www.youtube.com/embed/Jb-Oys-IcWE?rel=0&amp;autoplay=0" frameborder="0"
+                        allowfullscreen></iframe>
+                  </div>
 
-               <!-- Trailer YouTube -->
-               <div class="embed-responsive embed-responsive-16by9">
-                  <iframe class="embed-responsive-item px-2 py-2"
-                     src="https://www.youtube.com/embed/VNUGHxZviag?rel=0&amp;autoplay=0" frameborder="0"
-                     allowfullscreen></iframe>
-               </div>
-
-               <div class="modal-body text-center">
-                  Téhéran 1978 : Marjane, huit ans, songe à l'avenir et se rêve en prophète sauvant le monde. Choyée
-                  par des parents
-                  modernes et cultivés, particulièrement liée à sa grand-mère, elle suit avec exaltation les évènements
-                  qui vont mener à
-                  la révolution et provoquer la chute du régime du Chah.
-                  Avec l'instauration de la République islamique débute le temps des "commissaires de la révolution"
-                  qui contrôlent
-                  tenues et comportements. Marjane qui doit porter le voile, se rêve désormais en révolutionnaire.
-                  Bientôt, la guerre contre l'Irak entraîne bombardements, privations, et disparitions de proches. La
-                  répression
-                  intérieure devient chaque jour plus sévère.
-                  Dans un contexte de plus en plus pénible, sa langue bien pendue et ses positions rebelles deviennent
-                  problématiques.
-                  Ses parents décident alors de l'envoyer en Autriche pour la protéger.
-                  A Vienne, Marjane vit à quatorze ans sa deuxième révolution : l'adolescence, la liberté, les vertiges
-                  de l'amour mais
-                  aussi l'exil, la solitude et la différence.
-                  <hr>
-                  à partir de 10 ans - VF - 1h35
-               </div>
-               <div class="modal-footer">
-                  <button type="button" class="btn btn-warning" data-dismiss="modal">Fermer</button>
+                  <div class="modal-body text-justify">
+                     Laure a 10 ans. Laure est un garçon manqué. Arrivée dans un nouveau quartier, elle fait croire à Lisa
+                     et
+                     sa bande
+                     qu’elle est un garçon. Action ou vérité ? Action. L’été devient un grand terrain de jeu et Laure
+                     devient
+                     Michael, un
+                     garçon comme les autres… suffisamment différent pour attirer l’attention de Lisa qui en tombe
+                     amoureuse.
+                     Laure profite
+                     de sa nouvelle identité comme si la fin de l’été n’allait jamais révéler son troublant secret.
+                     <hr>
+                     <p class="text-warning">à partir de 12 ans - VF - 1h22 - Drame</p>
+                  </div>
+                  <div class="modal-footer">
+                     <button type="button" class="btn btn-outline-warning" data-dismiss="modal">Fermer</button>
+                  </div>
                </div>
             </div>
          </div>
-      </div>
 
-      <div class="modal fade" id="rouille" tabindex="-1" role="dialog">
-         <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-               <div class="modal-header">
-                  <h5 class="modal-title" id="resume">Résumé</h5>
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                     <span aria-hidden="true">&times;</span>
-                  </button>
-               </div>
 
-               <!-- Trailer YouTube -->
-               <div class="embed-responsive embed-responsive-16by9">
-                  <iframe class="embed-responsive-item px-2 py-2"
-                     src="https://www.youtube.com/embed/z2cgCzKR2mE?rel=0&amp;autoplay=0" frameborder="0"
-                     allowfullscreen></iframe>
-               </div>
-
-               <div class="modal-body text-center">
-                  Ça commence dans le Nord.
-                  Ali se retrouve avec Sam, 5 ans, sur les bras. C’est son fils, il le connaît à peine. Sans domicile,
-                  sans argent et
-                  sans amis, Ali trouve refuge chez sa sœur à Antibes. Là-bas, c’est tout de suite mieux, elle les
-                  héberge
-                  dans le garage
-                  de son pavillon, elle s’occupe du petit et il fait beau.
-                  A la suite d’une bagarre dans une boîte de nuit, son destin croise celui de Stéphanie. Il la ramène
-                  chez
-                  elle et lui
-                  laisse son téléphone.
-                  Il est pauvre ; elle est belle et pleine d’assurance. C’est une princesse. Tout les oppose.
-                  Stéphanie est dresseuse d’orques au Marineland. Il faudra que le spectacle tourne au drame pour qu’un
-                  coup de téléphone
-                  dans la nuit les réunisse à nouveau.
-                  Quand Ali la retrouve, la princesse est tassée dans un fauteuil roulant : elle a perdu ses jambes et
-                  pas
-                  mal
-                  d’illusions.
-                  Il va l’aider simplement, sans compassion, sans pitié. Elle va revivre.
-                  <hr>
-                  à partir de 10 ans - VF - 2h - Drame
-               </div>
-               <div class="modal-footer">
-                  <button type="button" class="btn btn-warning" data-dismiss="modal">Fermer</button>
-               </div>
-            </div>
-         </div>
-      </div>
-
-      <div class="modal fade" id="patients" tabindex="-1" role="dialog">
-         <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-               <div class="modal-header">
-                  <h5 class="modal-title" id="resume">Résumé</h5>
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                     <span aria-hidden="true">&times;</span>
-                  </button>
-               </div>
-
-               <!-- Trailer YouTube -->
-               <div class="embed-responsive embed-responsive-16by9">
-                  <iframe class="embed-responsive-item px-2 py-2"
-                     src="https://www.youtube.com/embed/A02Xmwng9OA?rel=0&amp;autoplay=0" frameborder="0"
-                     allowfullscreen></iframe>
-               </div>
-
-               <div class="modal-body text-center">
-                  Se laver, s'habiller, marcher, jouer au basket, voici ce que Ben ne peut plus faire à son arrivée dans
-                  un centre de
-                  rééducation suite à un grave accident. Ses nouveaux amis sont tétras, paras, traumas crâniens....
-                  Bref,
-                  toute la crème
-                  du handicap. Ensemble ils vont apprendre la patience. Ils vont résister, se vanner, s'engueuler, se
-                  séduire mais
-                  surtout trouver l'énergie pour réapprendre à vivre. Patients est l'histoire d'une renaissance, d'un
-                  voyage chaotique
-                  fait de victoires et de défaites, de larmes et d’éclats de rire, mais surtout de rencontres : on ne
-                  guérit pas seul.
-                  <hr>
-                  à partir de 10 ans - VF - 1h52 - Drame/Comédie
-               </div>
-               <div class="modal-footer">
-                  <button type="button" class="btn btn-warning" data-dismiss="modal">Fermer</button>
-               </div>
-            </div>
-         </div>
-      </div>
-
-      <div class="modal fade" id="jeVaisBien" tabindex="-1" role="dialog">
-         <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-               <div class="modal-header">
-                  <h5 class="modal-title" id="resume">Résumé</h5>
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                     <span aria-hidden="true">&times;</span>
-                  </button>
-               </div>
-
-               <!-- Trailer YouTube -->
-               <div class="embed-responsive embed-responsive-16by9">
-                  <iframe class="embed-responsive-item px-2 py-2"
-                     src="https://www.youtube.com/embed/HWCIu0Ll91s?rel=0&amp;autoplay=0" frameborder="0"
-                     allowfullscreen></iframe>
-               </div>
-
-               <div class="modal-body text-center">
-                  Comme elle rentre de vacances, Lili, 19 ans, apprend par ses parents que Loïc, son frère jumeau, suite
-                  à
-                  une violente
-                  dispute avec son père, a quitté la maison.
-                  Loïc ne lui donnant pas de nouvelles, Lili finit par se persuader qu'il lui est arrivé quelque chose
-                  et
-                  part à sa
-                  recherche.
-                  Ce qu'elle va découvrir dépasse l'entendement.
-                  <hr>
-                  à partir de 10 ans - VF - 1h40 - Drame
-               </div>
-               <div class="modal-footer">
-                  <button type="button" class="btn btn-warning" data-dismiss="modal">Fermer</button>
-               </div>
-            </div>
-         </div>
-      </div>
-
-      <div class="modal fade" id="ecume" tabindex="-1" role="dialog">
-         <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-               <div class="modal-header">
-                  <h5 class="modal-title" id="resume">Résumé</h5>
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                     <span aria-hidden="true">&times;</span>
-                  </button>
-               </div>
-
-               <!-- Trailer YouTube -->
-               <div class="embed-responsive embed-responsive-16by9">
-                  <iframe class="embed-responsive-item px-2 py-2"
-                     src="https://www.youtube.com/embed/kI90CvU0P_c?rel=0&amp;autoplay=0" frameborder="0"
-                     allowfullscreen></iframe>
-               </div>
-
-               <div class="modal-body text-center">
-                  L’histoire surréelle et poétique d’un jeune homme idéaliste et inventif, Colin, qui rencontre Chloé,
-                  une
-                  jeune femme
-                  semblant être l’incarnation d’un blues de Duke Ellington. Leur mariage idyllique tourne à l’amertume
-                  quand Chloé tombe
-                  malade d’un nénuphar qui grandit dans son poumon. Pour payer ses soins, dans un Paris fantasmatique,
-                  Colin doit
-                  travailler dans des conditions de plus en plus absurdes, pendant qu’autour d’eux leur appartement se
-                  dégrade et que
-                  leur groupe d’amis, dont le talentueux Nicolas, et Chick, fanatique du philosophe Jean-Sol Partre, se
-                  délite.
-                  <hr>
-                  à partir de 10 ans - VF - 1h30 - Comédie dramatique
-               </div>
-               <div class="modal-footer">
-                  <button type="button" class="btn btn-warning" data-dismiss="modal">Fermer</button>
-               </div>
-            </div>
-         </div>
-      </div>
-
-      <div class="modal fade" id="laHaine" tabindex="-1" role="dialog">
-         <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-               <div class="modal-header">
-                  <h5 class="modal-title" id="resume">Résumé</h5>
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                     <span aria-hidden="true">&times;</span>
-                  </button>
-               </div>
-
-               <!-- Trailer YouTube -->
-               <div class="embed-responsive embed-responsive-16by9">
-                  <iframe class="embed-responsive-item px-2 py-2"
-                     src="https://www.youtube.com/embed/G65Y-yr4M4o?rel=0&amp;autoplay=0" frameborder="0"
-                     allowfullscreen></iframe>
-               </div>
-
-               <div class="modal-body text-center">
-                  Trois copains d'une banlieue ordinaire traînent leur ennui et leur jeunesse qui se perd. Ils vont
-                  vivre
-                  la journée la
-                  plus importante de leur vie après une nuit d'émeutes provoquée par le passage à tabac d'Abdel Ichah
-                  par
-                  un inspecteur
-                  de police lors d'un interrogatoire.
-                  <hr>
-                  à partir de 12 ans - VF - 1h35 - Drame
-               </div>
-               <div class="modal-footer">
-                  <button type="button" class="btn btn-warning" data-dismiss="modal">Fermer</button>
-               </div>
-            </div>
-         </div>
-      </div>
-
-      <div class="modal fade" id="polisse" tabindex="-1" role="dialog">
-         <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-               <div class="modal-header">
-                  <h5 class="modal-title" id="resume">Résumé</h5>
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                     <span aria-hidden="true">&times;</span>
-                  </button>
-               </div>
-
-               <!-- Trailer YouTube -->
-               <div class="embed-responsive embed-responsive-16by9">
-                  <iframe class="embed-responsive-item px-2 py-2"
-                     src="https://www.youtube.com/embed/mfrxqJpJeIA?rel=0&amp;autoplay=0" frameborder="0"
-                     allowfullscreen></iframe>
-               </div>
-
-               <div class="modal-body text-center">
-                  Le quotidien des policiers de la BPM (Brigade de Protection des Mineurs) ce sont les gardes à vue de
-                  pédophiles, les
-                  arrestations de pickpockets mineurs mais aussi la pause déjeuner où l’on se raconte ses problèmes de
-                  couple ; ce sont
-                  les auditions de parents maltraitants, les dépositions des enfants, les dérives de la sexualité chez
-                  les
-                  adolescents,
-                  mais aussi la solidarité entre collègues et les fous rires incontrôlables dans les moments les plus
-                  impensables ; c’est
-                  savoir que le pire existe, et tenter de faire avec… Comment ces policiers parviennent-ils à trouver
-                  l’équilibre entre
-                  leurs vies privées et la réalité à laquelle ils sont confrontés, tous les jours ? Fred, l’écorché du
-                  groupe, aura du
-                  mal à supporter le regard de Melissa, mandatée par le ministère de l’intérieur pour réaliser un livre
-                  de
-                  photos sur
-                  cette brigade.
-                  <hr>
-                  à partir de 12 ans - VF - 2h07 - Drame
-               </div>
-               <div class="modal-footer">
-                  <button type="button" class="btn btn-warning" data-dismiss="modal">Fermer</button>
-               </div>
-            </div>
-         </div>
-      </div>
-
-      <div class="modal fade" id="vieAdele" tabindex="-1" role="dialog">
-         <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-               <div class="modal-header">
-                  <h5 class="modal-title" id="resume">Résumé</h5>
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                     <span aria-hidden="true">&times;</span>
-                  </button>
-               </div>
-
-               <!-- Trailer YouTube -->
-               <div class="embed-responsive embed-responsive-16by9">
-                  <iframe class="embed-responsive-item px-2 py-2"
-                     src="https://www.youtube.com/embed/I46FzNqIY0c?rel=0&amp;autoplay=0" frameborder="0"
-                     allowfullscreen></iframe>
-               </div>
-
-               <div class="modal-body text-center">
-                  À 15 ans, Adèle ne se pose pas de question : une fille, ça sort avec des garçons. Sa vie bascule le
-                  jour
-                  où elle
-                  rencontre Emma, une jeune femme aux cheveux bleus, qui lui fait découvrir le désir et lui permettra de
-                  s’affirmer en
-                  tant que femme et adulte. Face au regard des autres Adèle grandit, se cherche, se perd, se trouve...
-                  <hr>
-                  à partir de 12 ans - VF - 2h57 - Drame / Romance
-               </div>
-               <div class="modal-footer">
-                  <button type="button" class="btn btn-warning" data-dismiss="modal">Fermer</button>
-               </div>
-            </div>
-         </div>
-      </div>
-
-      <div class="modal fade" id="battements" tabindex="-1" role="dialog">
-         <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-               <div class="modal-header">
-                  <h5 class="modal-title" id="resume">Résumé</h5>
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                     <span aria-hidden="true">&times;</span>
-                  </button>
-               </div>
-
-               <!-- Trailer YouTube -->
-               <div class="embed-responsive embed-responsive-16by9">
-                  <iframe class="embed-responsive-item px-2 py-2"
-                     src="https://www.youtube.com/embed/_TEzcCV8c8E?rel=0&amp;autoplay=0" frameborder="0"
-                     allowfullscreen></iframe>
-               </div>
-
-               <div class="modal-body text-center">
-                  Début des années 90. Alors que le sida tue depuis près de dix ans, les militants d'Act Up-Paris
-                  multiplient les actions
-                  pour lutter contre l'indifférence générale.
-                  Nouveau venu dans le groupe, Nathan va être bouleversé par la radicalité de Sean.
-                  <hr>
-                  à partir de 12 ans - VF - 2h07 - Drame
-               </div>
-               <div class="modal-footer">
-                  <button type="button" class="btn btn-warning" data-dismiss="modal">Fermer</button>
-               </div>
-            </div>
-         </div>
-      </div>
-
-      <div class="modal fade" id="hippocrate" tabindex="-1" role="dialog">
-         <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-               <div class="modal-header">
-                  <h5 class="modal-title" id="resume">Résumé</h5>
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                     <span aria-hidden="true">&times;</span>
-                  </button>
-               </div>
-
-               <!-- Trailer YouTube -->
-               <div class="embed-responsive embed-responsive-16by9">
-                  <iframe class="embed-responsive-item px-2 py-2"
-                     src="https://www.youtube.com/embed/gZGY1Ncxv6M?rel=0&amp;autoplay=0" frameborder="0"
-                     allowfullscreen></iframe>
-               </div>
-
-               <div class="modal-body text-center">
-                  Benjamin va devenir un grand médecin, il en est certain. Mais pour son premier stage d’interne dans le
-                  service de son
-                  père, rien ne se passe comme prévu. La pratique se révèle plus rude que la théorie. La responsabilité
-                  est écrasante,
-                  son père est aux abonnés absents et son co-interne, Abdel, est un médecin étranger plus expérimenté
-                  que
-                  lui. Benjamin
-                  va se confronter brutalement à ses limites, à ses peurs, celles de ses patients, des familles, des
-                  médecins, et du
-                  personnel. Son initiation commence.
-                  <hr>
-                  à partir de 12 ans - VF - 1h42 - Comédie dramatique
-               </div>
-               <div class="modal-footer">
-                  <button type="button" class="btn btn-warning" data-dismiss="modal">Fermer</button>
-               </div>
-            </div>
-         </div>
-      </div>
-
-      <div class="modal fade" id="femmes" tabindex="-1" role="dialog">
-         <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-               <div class="modal-header">
-                  <h5 class="modal-title" id="resume">Résumé</h5>
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                     <span aria-hidden="true">&times;</span>
-                  </button>
-               </div>
-
-               <!-- Trailer YouTube -->
-               <div class="embed-responsive embed-responsive-16by9">
-                  <iframe class="embed-responsive-item px-2 py-2"
-                     src="https://www.youtube.com/embed/jGyJL8SnsOM?rel=0&amp;autoplay=0" frameborder="0"
-                     allowfullscreen></iframe>
-               </div>
-
-               <div class="modal-body text-center">
-                  Dans les années cinquante, dans une grande demeure bourgeoise en pleine campagne, les gens sont sur le
-                  point de fêter
-                  Noël. Mais un drame se produit : le maître de maison est retrouvé assassiné.
-                  Le ou plutôt la coupable se cache parmi huit femmes que fréquentait régulièrement la victime. Commence
-                  alors une longue
-                  journée d'enquête, faite de disputes, de trahisons et de révélations.
-                  <hr>
-                  à partir de 12 ans - VF - 1h43 - Comédie / Policier
-               </div>
-               <div class="modal-footer">
-                  <button type="button" class="btn btn-warning" data-dismiss="modal">Fermer</button>
-               </div>
-            </div>
-         </div>
-      </div>
-
-      <div class="modal fade" id="tomboy" tabindex="-1" role="dialog">
-         <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-               <div class="modal-header">
-                  <h5 class="modal-title" id="resume">Résumé</h5>
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                     <span aria-hidden="true">&times;</span>
-                  </button>
-               </div>
-
-               <!-- Trailer YouTube -->
-               <div class="embed-responsive embed-responsive-16by9">
-                  <iframe class="embed-responsive-item px-2 py-2"
-                     src="https://www.youtube.com/embed/Jb-Oys-IcWE?rel=0&amp;autoplay=0" frameborder="0"
-                     allowfullscreen></iframe>
-               </div>
-
-               <div class="modal-body text-center">
-                  Laure a 10 ans. Laure est un garçon manqué. Arrivée dans un nouveau quartier, elle fait croire à Lisa
-                  et
-                  sa bande
-                  qu’elle est un garçon. Action ou vérité ? Action. L’été devient un grand terrain de jeu et Laure
-                  devient
-                  Michael, un
-                  garçon comme les autres… suffisamment différent pour attirer l’attention de Lisa qui en tombe
-                  amoureuse.
-                  Laure profite
-                  de sa nouvelle identité comme si la fin de l’été n’allait jamais révéler son troublant secret.
-                  <hr>
-                  à partir de 12 ans - VF - 1h22 - Drame
-               </div>
-               <div class="modal-footer">
-                  <button type="button" class="btn btn-warning" data-dismiss="modal">Fermer</button>
-               </div>
-            </div>
-         </div>
-      </div>
-
-      <!-- Booking Form -->
+   <!------------------------------------------ Booking Form ---------------------------------------- -->
 
       <div class="container">
-         <section class="reservation bg-light py-3 px-4 mb-5 text-lighter" id="reservation">
-
+         <section class="reservation bg-light py-3 px-4 mb-5" id="reservation">
 
             <h2 class="text-center pb-2">Réserver en ligne !</h2>
             <hr>
@@ -955,8 +1079,8 @@
          </section>
       </div>
 
-      <!-- Footer -->
 
+   <!------------------------------------------ Footer ------------------------------------------>
 
       <footer class=" footer bg-custom text-warning p-1 text-center font-italic font-weight-light">
          <div class="container">

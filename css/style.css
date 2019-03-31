@@ -1,16 +1,4 @@
-/* Colors
- 
-
-
-*/
-
-
-
-.card {
-   background-color: rgba(43, 43, 43, 0.555);
-}
-
-/* General */
+/* ---------------------------------------- General ----------------------------------------*/
 
 body {
    font-family: "Open Sans", sans-serif;
@@ -25,16 +13,30 @@ h1, h2, h3, h4, h5, h6 {
    font-family: "Roboto Slab", sans-serif;
 }
 
-
 /* Menu */
 
+.nav-link {
+   word-spacing: 20px;
+}
+
 .bg-custom {
+   background-color: #ffc107;
+}
+.alert-custom {
    background-color: #ffc107;
 }
 
 .bg-warning,
 .dropdown-menu {
-   background-color: #ffc107;
+   padding-top: 20px;
+   background-color: #ffc107ce;
+   border: none;
+   color: #ffc107;
+}
+
+.dropdown-item:hover {
+   background-color: transparent;
+   font-weight: bold;
 }
 
 .nav-link {
@@ -52,8 +54,6 @@ h1, h2, h3, h4, h5, h6 {
 .banniere {
    background-image: url('../img/banniere.jpg');
    background-size: cover;
-   
-
 }
 
 .btn-outline-warning:hover {
@@ -64,11 +64,6 @@ h1, h2, h3, h4, h5, h6 {
 .navbar-brand {
    padding: 0;
    margin: 0;
-}
-
-.dropdown-item:hover {
-   background-color: initial;
-   text-decoration: underline;
 }
 
 
@@ -82,26 +77,12 @@ h1, h2, h3, h4, h5, h6 {
 
 .reservation {
    background-image:
-      linear-gradient(rgba(255, 193, 7, 0.89), rgba(255, 255, 255, 0.185)),
+      linear-gradient(rgba(255, 193, 7, 0.137), rgba(255, 255, 255, 0.281)),
       url('../img/stars.jpg');
    font-weight: 700;
    box-shadow: 1px 1px 15px #555;
    border-radius: 5px;
-}
-
-
-/* Shadow */
-
-.alert-custom {
-   background-color: rgb(255, 193, 7);
-   box-shadow: 1px 1px 15px #555;
-}
-
-
-/* Google Maps */
-
-.maps {
-   box-shadow: 1px 1px 12px #555;
+   color: #ffc107;
 }
 
 
@@ -130,8 +111,43 @@ h1, h2, h3, h4, h5, h6 {
    font-size: 25px;
 }
 
+/* ---------------------------------------- index.html ---------------------------------------- */
 
-/* Slider */
+/* Cards movies */
+
+.card {
+   background-color: rgba(43, 43, 43, 0.555);
+}
+
+.modal-content {
+   background-color: black !important;
+}
+
+.close {
+   color: #ffc107 !important;
+}
+
+
+
+/* ---------------------------------------- infos-pratiques.html ---------------------------------------- */
+
+/* Google Maps */
+
+.maps {
+   box-shadow: 1px 1px 12px #555;
+}
+
+
+/* Icones access */
+
+.fas {
+   color: #ffc107 !important;
+}
+
+
+/* ---------------------------------------- actualites.html ---------------------------------------- */
+
+/* Timeline */
 
 .timeline a {
    text-decoration: none;
