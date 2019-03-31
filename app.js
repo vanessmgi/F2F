@@ -1,3 +1,5 @@
+// stop video
+
 // $(document).ready(function () {
 //    var closeBtn = $('.close');
 
@@ -5,3 +7,9 @@
 //       $('iframe').attr('src', $('iframe').attr('src'));
 //    })
 // })
+
+
+
+// cookies
+
+$('.alert').alert()
