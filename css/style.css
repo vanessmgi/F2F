@@ -108,7 +108,7 @@ h1, h2, h3, h4, h5, h6 {
 .fa-twitter-square:hover,
 .fa-instagram:hover,
 .fa-pinterest-square:hover {
-   color: rgb(255, 93, 0);
+   color: #ffc107;
    font-size: 25px;
 }
 
