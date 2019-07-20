@@ -1,4 +1,4 @@
-# festival de Films
+# F2F
 ## Projet 3 : Créer un site pour un Festival de films en plein Air
 
 
@@ -14,6 +14,11 @@ Son association vient juste d'être créée et elle dispose d'un budget limité.
 >L'accès aux projections sera gratuit et ouvert à tous mais je souhaite que le public puisse se préinscrire pour estimer le nombre de personnes présentes chaque soir.
 >Je souhaite avoir une adresse professionnelle en .com ou en .org : je suis preneuse de conseils sur le meilleur choix pour l'adresse et je ne souhaite pas m'occuper de l'hébergement.
 
-En tant que développeur, on vous demande de lister les fonctionnalités dont a besoin la cliente et de proposer une solution technique adaptée. Vous devez donc sélectionner la solution qui vous semble la plus à même de répondre à son besoin.
+En tant que développeur, on vous demande de :
+- Lister les fonctionnalités dont a besoin la cliente 
+- Proposer une solution technique adaptée. 
 
-Vous devrez ensuite réaliser une première version de ce site correspondant à ses attentes.
+**Vous devez donc** : 
+- Sélectionner la solution qui vous semble la plus à même de répondre à son besoin.
+- Réaliser une première version de ce site correspondant à ses attentes.
+- Réaliser un document technique (Guide d'utilisation pas à pas).
